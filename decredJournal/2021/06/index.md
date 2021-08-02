@@ -190,3 +190,24 @@ Arte y diversión:
 Traducciones:
 
 La revista Decred de mayo 2021 se tradujo al [árabe](https://xaur.github.io/decred-news/) (@arij, @ abdulrahman4) y al chino (@Dominic). La edición de abril en español también está disponible. ¡Gracias a todos!
+
+## Discusiones
+
+Noticias de sistemas de comunicación:
+
+- Matrix experimentó un rendimiento bajo debido a un intento a gran escala de registrar [cuentas de bots](https://twitter.com/matrixdotorg/status/1409873992454967304) y enviar spam a la red.
+
+Publicaciones seleccionadas de Reddit:
+
+- Decred, uso de energía y energías [renovables](https://www.reddit.com/r/decred/comments/o931uc/random_question_dcr_pow_and_renewables/) de PoW
+- El fuerte [discurso](https://www.reddit.com/r/decred/comments/o2g8c2/dex_decentralized_exchange/) de @ atweiden para DCRDEX
+- [Recompensa](https://www.reddit.com/r/decred/comments/o14da0/decred_community_member_willing_to_put_up_100k_to/) de integración de THORChain y comparación con DCRDEX
+
+Debates seleccionados de Twitter:
+- @sumiflow está haciendo a los intercambios una [pregunta difícil](https://twitter.com/Sumiflow/status/1410003328780619777) sobre sus opciones de listado
+- @lukebp sobre cómo "De" Fi no debería depender de un puñado de puntos centrales trivialmente [bloqueables](https://twitter.com/lukebp_/status/1409280372970508301)
+- @lukebp mostró por qué Politeia es enorme, con ejemplos en vivo:
+
+> Politeia ha experimentado una gran mejora este año y está haciendo cosas que nadie más está haciendo.
+(explicación técnica…)
+Entonces, ¿por qué es esto tan importante? Esto nos proporciona una prueba irrefutable de que mi propuesta existía a la altura del bloque 552071 y no ha sido modificada desde entonces. Ningún otro sitio de producción proporciona este nivel de transparencia y auditabilidad criptográfica para sus datos. ([@lukebp](https://twitter.com/lukebp_/status/1407089424924610572))
