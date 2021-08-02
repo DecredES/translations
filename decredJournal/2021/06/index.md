@@ -211,3 +211,36 @@ Debates seleccionados de Twitter:
 > Politeia ha experimentado una gran mejora este año y está haciendo cosas que nadie más está haciendo.
 (explicación técnica…)
 Entonces, ¿por qué es esto tan importante? Esto nos proporciona una prueba irrefutable de que mi propuesta existía a la altura del bloque 552071 y no ha sido modificada desde entonces. Ningún otro sitio de producción proporciona este nivel de transparencia y auditabilidad criptográfica para sus datos. ([@lukebp](https://twitter.com/lukebp_/status/1407089424924610572))
+
+## Mercados
+
+En junio, DCR cotizaba entre  87.66-174.59 USD/ BTC 0.00298-0.00468. La tarifa promedio diaria fue de $131.52.
+
+## Relevantes Externos
+
+Se está llevando a cabo una migración a gran escala de hashrate de mineros de Bitcoin (y otros) desde China, y se está cubriendo en todas las [publicaciones](https://www.forbes.com/sites/zinnialee/2021/06/23/bitcoin-mining-companies-exiting-china-as-authorities-crackdown-on-cryptocurrencies/?sh=2de865243983) [comerciales](https://www.bloomberg.com/news/articles/2021-06-20/bitcoin-drops-as-hashrate-declines-with-china-mining-crackdown) [principales]((https://www.cnbc.com/2021/06/15/chinas-bitcoin-miner-exodus-.html)). El éxodo se desencadenó después de que las autoridades chinas hicieran declaraciones sobre tomar medidas enérgicas contra la minería de Bitcoin, y luego varias provincias dejaron en claro a los mineros que tenían que detenerse. Uno de los problemas que enfrentan las empresas mineras al [reubicar](https://www.coindesk.com/bitcoin-unpacking-hashrate-nic-cart-migration) su hardware de hash es el [alto](https://compassmining.io/education/cost-bitcoin-miners-leaving-china/) precio actual del envío internacional.
+
+El programa Zcash Open Major Grants (ZOMG) ha financiado el Proyecto Tor con $670 000, que se utilizarán para pagar los salarios de los desarrolladores mientras trabajan para Arti (A Rust Tor Implementation), lo que haría que Tor sea más accesible para otras aplicaciones, incluido Zcash.
+
+La comunidad de Uniswap está [considerando](https://thedefiant.io/uniswap-lobby/) [financiar](https://www.coindesk.com/tor-project-zcash-open-major-grants-zomg-arti-coding-language-upgrade) un "fondo de defensa política DeFi" con $27 millones a $40 millones de dólares, el propósito del fondo sería "educar a los responsables políticos, lograr claridad regulatoria para DeFi, apoyar DeFi y la gobernanza descentralizada, y alentar a otros protocolos de DeFi a contribuir ideas junto con apoyo ”. A medida que avanzó a través de una fase de verificación de [temperatura](https://gov.uniswap.org/t/temperature-check-funding-a-political-defense-of-defi/12557) y verificación de [consenso](https://gov.uniswap.org/t/consensus-check-uni-should-fund-a-political-defense-organization-for-decentralized-finance-copy/12717), se convirtió en el "Fondo de Educación DeFi" más general cuando se sometió a [votación](https://app.uniswap.org/#/vote/0/1) (concluyó a fines de junio con una aprobación del 84%).
+
+El proyecto Curve DeFi está [considerando](https://www.theblockcrypto.com/post/108561/the-first-dao-lawsuit-proposal-asks-if-curve-should-protect-its-ip) si hacer valer sus derechos de propiedad intelectual en los tribunales. Se está discutiendo una [propuesta](https://gov.curve.fi/t/cip-xx-enforce-curves-ip-rights/1890/3) en la que los miembros de Curve DAO solicitarían aprobación o rechazarían propuestas de bufetes de abogados, relacionadas con el cierre de proyectos de la competencia que hayan copiado el código de Curve (que incluye la estipulación de que “no hay licencia, derecho de reproducción o distribución u otro el derecho al respecto está otorgado o implícito ”).
+
+Ha habido una ejecución en el protocolo Iron Titanium, que lo vio [incentivar](https://www.coindesk.com/iron-finance-defi-titan-iron-price-drop) su propio descenso rápido e irrevocable a cero una vez que se cumplieron ciertas condiciones comerciales poco comunes.
+
+El irónicamente titulado "SafeDollar" también se redujo a cero este mes después de haber sido [hackeado](https://securityboulevard.com/2021/06/safedollar-stablecoin-not-safe-nor-stable-hack-sends-value-to-zero/), el atacante saqueó alrededor de $248 000 en tokens.
+
+THORChain, en donde algunos miembros de la comunidad de Decred se han comprometido en torno a una integración DCR, [sufrió](https://twitter.com/THORChain/status/1409630489611182081) su primer ataque malicioso. Una [autopsia](https://twitter.com/THORChain/status/1409736048960180227) indicó que se tomaron $140 000 explotando un error lógico en el módulo ETH Bifrost. La red se detuvo durante 6 horas mientras se implementaba una solución. THORChain dijo que cubrirá las pérdidas incurridas por los usuarios con fondos de la tesorería.
+
+Eso es todo por junio. Comparta sus actualizaciones para el próximo número en nuestra sala de chat [#journal](https://chat.decred.org/#/room/#journal:decred.org).
+
+## Sobre esta edición
+Esta es la edición número 39 de la Revista Decred. Un índice de todas las ediciones, y traducciones están disponibles [aquí](https://xaur.github.io/decred-news/).
+
+La mayoría de la información de terceros se transmite directamente desde la fuente después de un control de fiabilidad mínimo. Los autores de la Revista Decred no tienen la capacidad de verificar todas las reclamaciones. Tenga cuidado con las estafas y haga su propia investigación.
+
+Créditos (por orden alfabético)
+- Escritura y redacción: bee, degeri, l1ndseymm, richardred
+- Revisión y comentarios: davecgh, lukebp, raedah
+- Imagen de portada: saender
+- Financiado por: Los stakeholders de Decred
