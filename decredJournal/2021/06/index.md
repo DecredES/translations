@@ -141,3 +141,52 @@ Otra es la instancia de [PeerTube de @karamble](https://tube.decredcommunity.org
 Advertencia: los autores de la revista DEcred no tienen idea de la confiabilidad de ninguno de los servicios mencionados anteriormente. Haga su propia investigación antes de confiar su información personal o sus activos a cualquier entidad.
 
 Únase a nuestro chat de [#services](https://chat.decred.org/#/room/#services:decred.org) para seguir las actualizaciones del ecosistema Decred.
+
+## Alcance
+
+Logros de Monde PR para junio:
+
+- lanzó 1 historia para publicaciones financieras y criptográficas.
+- respondió a 6 solicitudes de comentarios / oportunidades de relaciones públicas
+- consiguió 2 entrevistas con los medios
+
+Cobertura de noticias por Monde PR:
+
+- Un artículo en [CryptoNexa](https://www.cryptonexa.com/2021/06/02/decred-and-zcash-lead-the-weekly-top/) con noticias sobre la integración de DCRDEX en Decrediton.
+- Un artículo en [Benzinga](https://www.benzinga.com/markets/cryptocurrency/21/06/21722413/chicken-soup-for-the-bitcoin-soul) con comentarios de @jz sobre cripto FUD y FOMO. La pieza se distribuyó a tres publicaciones, incluida [Yahoo! Finanzas](https://finance.yahoo.com/news/chicken-soup-bitcoin-soul-131625705.html) y [Explica.co](https://www.explica.co/cryptocurrency-chicken-soup-for-the-bitcoin-soul.html).
+- Un artículo en [NerdWallet](https://www.nerdwallet.com/article/investing/is-bitcoin-safe) con comentarios de @ jy-p sobre cómo almacenar cripto.
+- Un artículo en [NerdWallet](https://www.nerdwallet.com/article/investing/crypto-crash) con comentarios de @ jy-p sobre cómo comprar criptomonedas. El artículo se distribuyó a 42 publicaciones, incluidas [Nasdaq](https://www.nasdaq.com/articles/what-to-do-when-cryptocurrency-is-crashing-2021-06-30), [MSN Money](https://www.msn.com/en-us/money/savingandinvesting/what-to-do-when-cryptocurrency-is-crashing/ar-AALCJYT), [Yahoo! Finance](https://finance.yahoo.com/news/cryptocurrency-crashing-130055734.html) y [SF Gate](https://www.sfgate.com/business/personalfinance/article/What-to-Do-When-Cryptocurrency-Is-Crashing-16283912.php).
+
+## Eventos
+
+Asistido:
+
+12 de junio - Arab Blockchain Week 2021 - Internet. @arij presentó la gobernanza dentro y fuera de la cadena y ejemplos de ambos en Decred (ver enlaces y diapositivas en el [informe](https://decredcommunity.github.io/events/index/20210612.1).
+
+## Media
+
+Artículos seleccionados:
+
+- Error de política en gastos de tesorería por @matheusd ([blog.decred.org](https://blog.decred.org/2021/06/25/Treasury-Expenditure-Policy-Bug/))
+- Crowdfunding con derecho a voto: una característica decisiva de Decred DAO por @ammarooni ([medium](https://ammarooni.medium.com/crowdfunding-with-voting-rights-a-killer-feature-of-the-decred-dao-78cf608e3498))
+
+Videos:
+- Actualización de Decred News: v1.6.3, integración DEX, primer gasto de tesorería de DAO, apuesta de ATH y más por @Salirus ([youtube](https://www.youtube.com/watch?v=JXbcBKnUgYc))
+- ¿Debería el dinero ser privado? Decred Fundamentals por @phoenixgreen ([youtube](https://www.youtube.com/watch?v=1iCpzXC6WBw))
+- La evolución de la tesorería - Decred Fundamentals por @phoenixgreen ([youtube](https://www.youtube.com/watch?v=hk2USZ-MxqM))
+- Suministro y distribución de monedas - Decred Fundamental por @phoenixgreen ([youtube](https://www.youtube.com/watch?v=mGhOOVUP1Dg))
+- 13 millones de hitos alcanzados - Decred Society por @phoenixgreen ([youtube](https://www.youtube.com/watch?v=iDCo9VOVSKU))
+- Decred: ¡las principales razones por las que esta criptomoneda es genial! por Ripe For Investing ([youtube](https://www.youtube.com/watch?v=JnBb5uiTSFU))
+- Don Jon, alias PurpleSuede22, nos habla de los secretos detrás del éxito de Decred. por [CryptoND1](https://twitter.com/CryptoND1) ([youtube](https://www.youtube.com/watch?v=dHif4vuIenA))
+- Coin Review - Decred by Spencer Tarring ([youtube](https://www.youtube.com/watch?v=eEZZVgMEYVs))
+- Por qué Decred cambia las reglas del juego por Todd F. Maki ([twitter](https://twitter.com/toddfmaki/status/1401734301243232259), [parte 2](https://twitter.com/toddfmaki/status/1401812413947604992))
+- @OfficialCryptos ahora está en [YouTube.](https://www.youtube.com/channel/UC6_TA2_NBf5i99vFKsqgbKQ)
+
+Arte y diversión:
+
+- Los objetos en el [espejo](https://twitter.com/OfficialCryptos/status/1400149513462026241) están más cerca de lo que parecen.
+- Cathie en un [Bisonte](https://twitter.com/OfficialCryptos/status/1400737260753018882).
+
+Traducciones:
+
+La revista Decred de mayo 2021 se tradujo al [árabe](https://xaur.github.io/decred-news/) (@arij, @ abdulrahman4) y al chino (@Dominic). La edición de abril en español también está disponible. ¡Gracias a todos!
