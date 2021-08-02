@@ -72,3 +72,72 @@ Se publicaron tres propuestas en Politeia y las tres han sido aprobadas con fuer
 
 Consulte el [issue #43](https://blockcommons.red/politeia-digest/issue043/) de Politeia Digest para obtener más detalles sobre las propuestas del mes.
 
+## Red
+
+Hashrate: el [hashrate](https://dcrdata.decred.org/charts?chart=hashrate&zoom=kpb32srm-kqn8vbkn&scale=linear&bin=block&axis=time) de junio se abrió a ~ 369 Ph / sy cerró ~ 73 Ph / s, tocando fondo en 61 Ph / sy alcanzando un máximo de 438 Ph / s durante todo el mes.
+
+Como puede visualizar arriba, junio tuvo una gran caída en el hashrate debido a que los mineros se mudaron fuera de China debido a una [prohibición](https://www.coindesk.com/chinas-bitcoin-mining-crackdown-is-a-boon-for-miners-elsewhere) reciente. Esto es especialmente visible en monedas extraídas de ASIC como Decred y [Bitcoin](https://twitter.com/krugermacro/status/1409484360651317250).
+
+Distribución del hashrate [reportada](https://miningpoolstats.stream/decred) en los pools el 1 de julio:
+
+- Poolin 37%
+- F2Pool 28%
+- Antpool 8%
+- Luxor 5%
+- BTC.com 5%
+- HuobiPool 1%
+- UUPool 0.2%
+- CoinMine 0.1%. 
+
+La distribución de 1 000 bloques [realmente extraídos](https://miningpoolstats.stream/decred) casi coincide con el hashrate informado. Los bloques minados al 15% no identificados se dividen entre las mismas 4 direcciones mencionados con [anterioridad](https://xaur.github.io/decred-news/journal/202105).
+
+Staking: el [precio de los tickets](https://dcrdata.decred.org/charts?chart=ticket-price&zoom=kpb32srm-kqn8vbkn&bin=window&axis=time&visibility=true-true) varió entre 168-208 DCR, con un [promedio](https://dcrstats.com/) de 30 días de 184.7 DCR (-1).
+
+La [cantidad bloqueada](https://dcrdata.decred.org/charts?chart=ticket-pool-value&zoom=kpb32srm-kqn8vbkn&scale=linear&bin=block&axis=time) fue de 7.33 a 7.72 millones de DCR, lo que significa que entre el 56.1 y el 59% del suministro circulante [participó](https://dcrdata.decred.org/charts?chart=stake-participation&zoom=kpb32srm-kqn8vbkn&scale=linear&bin=block&axis=time) en el proof-of-stake.
+
+VSP: El 1 de julio, los servidores vspd administraron ~ 8 000 (-200) tickets en vivo y los servidores dcrstakepool [enumerados](https://decred.org/vsp/) aproximadamente 600 (-500). En conjunto, los 12 VSP heredados y los 13 nuevos administraron el 20.9% del grupo de tickets, en comparación con el 22,7% del 1 de junio. Los VSP heredados excluidos de la lista que aún siguen activos administraron 26 tickets en vivo (-35).
+
+Nodos: A lo largo de junio, hubo alrededor de 216 nodos accesibles según [dcrextdata](https://analytics.planetdecred.org/nodes).
+
+Versiones de nodo a partir de la [instantánea](https://nodes.jholdstock.uk/user_agents) del 1 de julio (256 en total, solo dcrd): 
+
+- v1.6.2–53%
+- v1.6.0–19%
+- v1.6.1–13%
+- compilaciones de desarrollo v1.7 - 7%
+- compilaciones de desarrollo v1.6 - 3%
+- v1.5.1–2.8%
+- v1.5.2–2%.
+
+
+La proporción de [monedas mezcladas](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jzh4wow9-ks9hgjcu&bin=day&axis=time&visibility=true-true-true) varió entre el 43.7% y el 47% y alcanzó un nuevo máximo histórico.
+
+La red [lightning network](https://ln-map.jholdstock.uk/) de Decred ha visto 34 nodos (+1), 60 canales (+7) con una capacidad total de 21.8 DCR (+4.7), al 1 de julio.
+
+## Ecosistema
+
+[Stakey.net](https://stakey.net/) ha [eliminado](https://citadel.stakey.net/@support/106416385081730641) la interfaz web de su instancia heredada de dcrstakepool. Las carteras de votación y la API se mantendrán hasta que los usuarios migren a vspd. A partir del 1 de julio, el VSP heredado de stakey.net gestionaba 63 tickets en vivo, frente a los 134 del 1 de junio. Su [instancia vspd](https://stakey.net/) se ha convertido en la más grande, con más de 2,200 tickets en vivo.
+
+Para mantener la descentralización, se recomienda evitar proveedores que controlen demasiados tickets. Stakey.net se convierte en un "problema" aquí, ya que es el único VSP conocido que ofrece un servicio oculto Tor. ¡Otros proveedores son bienvenidos a la competencia!
+
+dcr.farm ahora redirige su [instancia vspd](https://vsp.dcr.farm/), aún así @infertux [confirmó](https://github.com/decred/dcrwebapi/issues/146#issuecomment-865451784) que sus billeteras heredadas están activas y se mantendrán hasta que se voten todas las entradas (32 permanecieron activas hasta el 22 de junio). El estado de las carteras heredadas y vspd de dcr.farm se puede comprobar en una página de [estado dedicada](https://stats.uptimerobot.com/46PWkSrZD).
+
+El VSP heredado de [YieldWallet](https://yieldwallet.io/) votó su último ticket y se cerró definitivamente. ¡Gracias por el servicio!
+
+El nuevo VSP de crypto-synergy.net está disponible en [mainnet](https://vspd.synergy-crypto.net/) y [testnet](https://vspd-testnet.synergy-crypto.net/). La instancia de mainnet informa su primer ticket votado (un requisito para todos los nuevos VSP), pero debe pasar la [revisión](https://github.com/decred/dcrwebapi/pull/147) para aparecer en [decred.org/vsp](https://decred.org/vsp/).
+
+En este punto, los VSP heredados tienen menos del 1.4% del grupo de tickets y se [recomienda](https://twitter.com/JamieHoldstock/status/1405069123453784065) actualizar a vspd para evitar el riesgo de tickets perdidos, p. Ej. en un escenario donde se active otra actualización de consenso mientras [dcrstakepool](https://github.com/decred/dcrstakepool) no está parcheado para seguir en la cadena.
+
+Se recomienda a los usuarios de Ledger Live que se [actualicen](https://www.ledger.com/ledger-live) a la versión 2.29.0 o posterior cuando se hayan solucionado los [problemas](https://status.ledger.com/incidents/j1sypv88pgs6) de sincronización y envío de DCR. La interrupción entre las primeras [menciones](https://status.ledger.com/incidents/j1sypv88pgs6) del problema y el lanzamiento de [v2.29.0](https://github.com/LedgerHQ/ledger-live-desktop/releases/tag/v2.29.0) duraron alrededor de 22 días.
+
+Indian [WazirX](https://wazirx.com/) ha [habilitado](https://twitter.com/WazirXIndia/status/1408022090750496776) el comercio DCR / INR y DCR / USDT. DCR fue parte del proceso de ["Listado Rápido"](https://blog.wazirx.com/rapid-listing-initiative-on-wazirx/) donde el comercio comienza antes, pero las opciones de depósito y retiro son limitadas hasta que se complete la integración. En el caso de esta lista, los depósitos y retiros entre billeteras entre WazirX y Binance están [disponibles](https://twitter.com/WazirXIndia/status/1407655011925073921) sin comisiones. WazirX fue [adquirido](https://www.binance.com/en/blog/404105749895733248/Binance-Acquires-Indias-Leading-Digital-Asset-Platform-WazirX-to-Launch-Multiple-FiattoCrypto-Gateways) por Binance en 2019.
+
+Para aquellos que se lo perdieron, vale la pena destacar dos servicios menos conocidos en el ecosistema más amplio de Decred. Una es una alternativa de Twitter llamada stakey.net:
+
+> Esta ciudadela Decred es una instancia de Mastodon modestamente rápida, segura y actualizada con disponibilidad de servidor monitoreada y copias de seguridad externas nocturnas. Abierto para toda la comunidad de Decred. (enlace de invitación [aquí](https://citadel.stakey.net/@support/105249104743040856))
+
+Otra es la instancia de [PeerTube de @karamble](https://tube.decredcommunity.org/videos/recently-added) que refleja el contenido en video de Decred para aumentar la resiliencia y la descentralización.
+
+Advertencia: los autores de la revista DEcred no tienen idea de la confiabilidad de ninguno de los servicios mencionados anteriormente. Haga su propia investigación antes de confiar su información personal o sus activos a cualquier entidad.
+
+Únase a nuestro chat de [#services](https://chat.decred.org/#/room/#services:decred.org) para seguir las actualizaciones del ecosistema Decred.
