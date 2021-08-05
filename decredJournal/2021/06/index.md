@@ -65,7 +65,7 @@ Es posible alejarse aún más de los soft forks gracias al proceso sin dramas de
 - eliminación de los intentos de votación o revocación cuando la clave privada [no este disponible](https://github.com/decred/dcrwallet/pull/2062) (debería evitar algunos errores del comprador de tickets)
 - uso de múltiples [conexiones](https://github.com/decred/dcrwallet/pull/1983) cuando se compre tickets automáticamente (puede resultar en una mezcla más lenta si la cuenta de financiamiento tiene UTXO limitadas)
 
-#### [Decrediton](https://github.com/decred/decrediton)
+### [Decrediton](https://github.com/decred/decrediton)
 
 Orientado al usuario:
 
@@ -98,6 +98,22 @@ Orientado al usuario:
 - ~ 13 correcciones de errores
 
 Backend y CLI:
+
+- `politeiavoter` [actualizado](https://github.com/decred/politeia/pull/1235) a la nueva API lanzada en [v1.0.0](https://github.com/decred/politeia/releases/tag/v1.0.0)
+- `politeiavoter` ahora volverá a [intentar](https://github.com/decred/politeia/pull/1438) sus votos en los errores del servidor
+- se agregó la implementación de [MySQL](https://github.com/decred/politeia/pull/1419) en la base de datos de usuarios. Será necesario migrar los datos de CockroachDB para eliminar esta dependencia y tener solo una base de datos con la que lidiar. La elección de MySQL fue dictada por [tlog](https://github.com/decred/politeia/issues/1392) (que [no es compatible](https://github.com/google/trillian/issues/1298) con PostgreSQL).
+- [READMEs](https://github.com/decred/politeia/pull/1421) actualizados con instrucciones de configuración para obtener una instancia completa de Politeia en funcionamiento (nuevos colaboradores, ¡no esperen más!)
+- Se agregaron [docs](https://github.com/decred/politeia/pull/1435) faltantes de las herramientas `pictl`y `politeiaverify`
+- seguimientos de [pila más significativos](https://github.com/decred/politeia/pull/1428)
+- cobertura de prueba para la gestión de [usuarios](https://github.com/decred/politeia/pull/1235) y peticiones
+- ~ 2 correcciones de errores.
+
+Sistema de gestión de contratistas (CMS):
+- se permite el uso de [propuestas archivadas](https://github.com/decred/politeia/pull/1422) en facturas
+- seguimiento agregado de los [gastos](https://github.com/decred/politeia/pull/1431) de la nueva tesorería (para determinar si se ha pagado la factura)
+- cálculo de [gastos](https://github.com/decred/politeia/pull/1429) de propuesta fija y petición de la versión correcta de la factura.
+
+@lukebp compartió una buena [introducción educativa](https://twitter.com/lukebp_/status/1407089424924610572) sobre cómo Politea logra su fuerte auditabilidad criptográfica.
 
 
 
