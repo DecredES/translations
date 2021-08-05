@@ -39,6 +39,68 @@ Leé la historia completa del error en la [publicación del blog](https://blog.d
 
 ## Desarrollo
 
+El trabajo que se informa a continuación tiene el estado "fusionado con el maestro", a menos que se indique lo contrario. Significa que el trabajo se completa, se revisa e integra en el código fuente que los usuarios avanzados pueden [crear y ejecutar](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c), pero aún no está disponible en los binarios de la versión para los usuarios habituales.
+
+### [dcrd](https://github.com/decred/dcrd)
+La forma en que se manejan los scripts estándar se ha reescrito para abordar varios problemas de larga data.
+
+Para una rápida introducción, los "scripts" son pequeños comandos almacenados dentro de las transacciones que consumen monedas como "input" de transacciones pasadas y crean nuevas monedas como "outputs" para el destinatario. Los "scripts estándar" son un subconjunto de todos los scripts permitidos por el consenso que cubren las operaciones más útiles (envío de fondos, staking, multisig, etc.) optimizados para la eficiencia y la seguridad de la red. Los nodos de la red principal normalmente se negarán a aceptar y retransmitir transacciones independientes (aquellas que no forman parte de un bloque) que contengan scripts no estándar.
+
+El [código reescrito](https://github.com/decred/dcrd/pull/2656) agregó un nuevo paquete llamado `stdscript` que admite diferentes versiones de script (esto era difícil de admitir anteriormente y ahora es necesario para la próxima actualización de consenso), proporciona una API más ergonómica para los desarrolladores (incluidos los ayudantes de atomic swap y multisig) y mejora la separación entre "Estándar" y "consenso" (un punto común de confusión para los nuevos desarrolladores). Además, la política de qué scripts que se consideran "estándar" se ha reforzado aún más para ayudar a garantizar que los scripts típicos ocupen menos espacio en la cadena y restringir aún más los casos que no tienen sentido.
+
+Como de costumbre, este gran cambio viene con en una serie de confirmaciones fáciles de digerir con descripciones informativas, pruebas, evaluaciones comparativas, ejemplos, todo terminado con un nuevo [README](https://github.com/decred/dcrd/blob/62950c2b8b8d831cacf6f2ec46216e420d2658cc/internal/staging/stdscript/README.md) completo.
+
+Entre otros varios [cambios](https://github.com/decred/dcrd/pulls?q=standardness+is%3Apr+merged%3A2021-06-01..2021-06-30+sort%3Aupdated-asc) se han centrado en eliminar los usos del código de estandarización del código de consenso, ya que la política de lo que se considera "estándar" puede cambiar en cualquier momento sin requerir un cambio de consenso y, por lo tanto, el código de consenso no debe verse afectado.
+
+Se ha presentado y aprobado una [propuesta](https://proposals.decred.org/record/3a98861) para desarrollar el próximo cambio de consenso. Esta actualización prácticamente prohibirá los soft forks para simplificar futuros cambios de consenso y [mejorar la seguridad](https://proposals.decred.org/record/3a98861/comments/8). Una vez activa, los nodos completos comenzarán a rechazar transacciones y scripts de versiones más nuevas que no se comprenden, en lugar de ignorarlos y creer que aún se pueden validar completamente en la cadena.
+
+> Los soft forks son principalmente el resultado de sistemas menos capaces con deficiencias técnicas y la falta de procesos formales de gobernanza necesarios para implementarlos de manera incontrovertible ([@davecgh](https://proposals.decred.org/record/3a98861))
+
+Es posible alejarse aún más de los soft forks gracias al proceso sin dramas de Decred de coordinar los hard forks y su comunidad altamente comprometida.
+
+### [dcrwallet](https://github.com/decred/dcrwallet)
+
+- opción para [desaprobar](https://github.com/decred/dcrwallet/pull/2054) bloques aleatoriamente (destinados a pruebas y no se puedan utilizar en la red principal)
+- actualización a los últimos [módulos dcrd](https://github.com/decred/dcrwallet/pull/2056), incluido el nuevo `stdaddr`
+- eliminación de los intentos de votación o revocación cuando la clave privada [no este disponible](https://github.com/decred/dcrwallet/pull/2062) (debería evitar algunos errores del comprador de tickets)
+- uso de múltiples [conexiones](https://github.com/decred/dcrwallet/pull/1983) cuando se compre tickets automáticamente (puede resultar en una mezcla más lenta si la cuenta de financiamiento tiene UTXO limitadas)
+
+#### [Decrediton](https://github.com/decred/decrediton)
+
+Orientado al usuario:
+
+- atenúe la [pestaña DEX](https://github.com/decred/decrediton/pull/3505) y muestra información sobre las herramientas en lugar de ocultarla en el modo SPV (esto ha confundido a mucha gente)
+- se agregaron opciones [avanzadas](https://github.com/decred/decrediton/pull/3487) para restaurar la billetera (deshabilite las actualizaciones de tipo de moneda y establezca el límite de brecha)
+- se permite [frases de contraseña](https://github.com/decred/decrediton/pull/3470) vacías para admitir la función de [frase contraseña](https://wiki.trezor.io/Passphrase) en Trezor
+- se permite ingresar una frase contraseña en el propio [Trezor](https://github.com/decred/decrediton/pull/3496) en lugar de preguntarla en Decrediton (solo modelo T)
+- implementación de un nuevo diseño de interfaz de usuario para las vistas de [gobernanza](https://github.com/decred/decrediton/pull/3467) (tanto en propuestas como en cambios de consenso)
+- componente de [entrada de texto](https://github.com/decred/decrediton/pull/3398) integrado de la biblioteca [pi-ui](https://github.com/decred/pi-ui). Para respaldar la especificación de diseño de Decrediton, se [actualizó](https://github.com/decred/pi-ui/pull/326) con nuevas características que otros proyectos basados en React en donde ahora se puedan usar.
+- ~ 10 correcciones de errores
+
+Los cambios orientados a los desarrolladores incluyen la finalización de varias mejoras de seguridad que tardaron en realizarse:
+
+- pruebas automatizadas para las vistas de [envío](https://github.com/decred/decrediton/pull/3489), [recepción](https://github.com/decred/decrediton/pull/3490) y [exportación](https://github.com/decred/decrediton/pull/3493)
+- [configuración de Webpack](https://github.com/decred/decrediton/pull/3503) reorganizada, limpia y optimizada
+- inhabilitación de la [integración de Node](https://github.com/decred/decrediton/pull/3486) en el código de la interfaz de usuario para que ya no se pueda acceder directamente a las API de Electron y Node de bajo nivel. Esta es una característica de seguridad importante y una práctica [recomendada](https://www.electronjs.org/docs/tutorial/security#2-do-not-enable-nodejs-integration-for-remote-content) en el desarrollo de aplicaciones modernas de Electron
+- aislamiento de [contexto](https://github.com/decred/decrediton/pull/3492) habilitado en la ventana principal: otra característica de [seguridad](https://www.electronjs.org/docs/tutorial/security#3-enable-context-isolation-for-remote-content) importante que restringe aún más el código de la interfaz de usuario
+- habilitación de la función [`webSecurity`](https://github.com/decred/decrediton/pull/3500) para reforzar las solicitudes externas (esto también corrigió el modo de desarrollo en Windows)
+- [dependencias](https://github.com/decred/decrediton/pull/3509) reducidas para depender menos del código de terceros y mejorar la seguridad al reducir la superficie de un posible ataque a la cadena de suministro
+- se introdujo un cuadro de diálogo de confirmación más seguro y se usó para confirmar el [acceso a VSP](https://github.com/decred/decrediton/pull/3515) junto a la [firma de transacciones](https://github.com/decred/decrediton/pull/3519).
+
+### [Politeia](https://github.com/decred/politeia)
+Orientado al usuario:
+
+- se agregó un botón para acceder al [raw Markdown](https://github.com/decred/politeiagui/issues/2415) 
+- se puede mostrar el estado del pago del [crédito de la propuesta](https://github.com/decred/politeiagui/pull/2417) (da una idea de qué tan pronto se pueden usar los créditos para enviar nuevas propuestas)
+- se puede [mostrar un banner](https://github.com/decred/politeiagui/pull/2456) cuando el usuario esté viendo `proposals-archive.decred.org` para reducir la confusión al hacer clic en el logotipo del sitio
+- aspecto mejorado del botón de [flat mode](https://github.com/decred/politeiagui/pull/2434)
+- se agregó el nombre de la propuesta a los [asuntos](https://github.com/decred/politeia/pull/1440) del correo electrónico
+- ~ 13 correcciones de errores
+
+Backend y CLI:
+
+
+
 ## Comunidad
 
 ¡Damos la bienvenida a los nuevos contribuidores con código fusionado en la rama principal:  @vibros68 ([politeiagui](https://github.com/decred/politeiagui/commits?author=vibros68)) y @x-walker-x ([politeiagui](https://github.com/decred/politeiagui/commits?author=x-walker-x))!
