@@ -1,6 +1,6 @@
 # Revista Decred Junio 2021
 
-![portada]('./assets/202006.png)
+![portada](./assets/202106.png)
 Core Lattice por @saender
 
 Lo más destacado de junio:
@@ -178,6 +178,8 @@ Developer:
 - implementación más [recomendaciones](https://paste.sr.ht/~eliasnaur/cea1d29d6a5f96668b5e166c2f39ef596974574f) de Elias Naur (creador de la biblioteca Gio UI)
 
 godcr se acerca a la fase de prueba pública. Esperamos las versiones preliminares.
+
+![pantalla](./assets/1.png)
 
 ### [dcrdata](https://github.com/decred/dcrdata)
 - se agregó la herramienta [swapscan](https://github.com/decred/dcrdata/pull/1828) que escanea las cadenas de bloques de Decred y Bitcoin en busca de transacciones de intercambio y genera un archivo CSV
@@ -368,6 +370,8 @@ Entonces, ¿por qué es esto tan importante? Esto nos proporciona una prueba irr
 ## Mercados
 
 En junio, DCR cotizaba entre  87.66-174.59 USD/ BTC 0.00298-0.00468. La tarifa promedio diaria fue de $131.52.
+
+![exchange](./assets/2.jpeg)
 
 ## Relevantes Externos
 
