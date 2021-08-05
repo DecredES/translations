@@ -122,7 +122,7 @@ Orientado al usuario:
 - ajustes de la interfaz de usuario de la [página admin](https://github.com/decred/vspd/pull/274)
 - eliminación de [caché mejorada](https://github.com/decred/vspd/pull/270) (evita que los usuarios vean recursos desactualizados)
 
-### Interno:
+Interno:
 - comparación de los [scripts](https://github.com/decred/vspd/pull/267) de transacciones en lugar de las direcciones al verificar los pagos de tarifas (esto es más eficiente y corrige algunos casos extremos)
 - [filtrado](https://github.com/decred/vspd/pull/265) de tickets de base de datos más rápido
 - aseguramiento de la altura de [compra de tickets](https://github.com/decred/vspd/pull/277) esté configurada para todos los tickets
@@ -142,7 +142,7 @@ Fusion en la versión maestra y v1.2.0:
 - almacenar los [pedidos archivados](https://github.com/decred/dcrdex/pull/1071) por separado para acelerar el procesamiento de los pedidos activos
 - Verifique las [versiones de los scripts](https://github.com/decred/dcrdex/pull/1107) (use diferentes métodos para dcrd 1.6 y 1.7) y prepárese para manejar diferentes versiones de los scripts (rama [backported](https://github.com/decred/dcrdex/pull/1108) v0.2)
 
-### dcrandroid
+### [dcrandroid](https://github.com/planetdecred/dcrandroid)
 - opción para [enviar el cambio](https://github.com/planetdecred/dcrandroid/pull/568 a una cuenta sin mezclar) (para mezclar antes de usar), e indicar a qué cuenta irá el cambio en la página Enviar
 - distinción en las [mezclas](https://github.com/planetdecred/dcrandroid/pull/565) con etiquetas e íconos únicos
 - actualización en traducción en [francés](https://github.com/planetdecred/dcrandroid/pull/567) 
@@ -178,6 +178,17 @@ Developer:
 - implementación más [recomendaciones](https://paste.sr.ht/~eliasnaur/cea1d29d6a5f96668b5e166c2f39ef596974574f) de Elias Naur (creador de la biblioteca Gio UI)
 
 godcr se acerca a la fase de prueba pública. Esperamos las versiones preliminares.
+
+### [dcrdata](https://github.com/decred/dcrdata)
+- se agregó la herramienta [swapscan](https://github.com/decred/dcrdata/pull/1828) que escanea las cadenas de bloques de Decred y Bitcoin en busca de transacciones de intercambio y genera un archivo CSV
+- eliminación de [javascript en línea](https://github.com/decred/dcrdata/pull/1832) de la página de gráficos
+- se agregó un riguroso en [HTML escaping](https://github.com/decred/dcrdata/pull/1836) para cualquier cosa que pueda contener información del usuario
+- se eliminó la dependencia de [axios](https://github.com/decred/dcrdata/pull/1833) para realizar solicitudes desde el código de la interfaz de usuario
+- [conectividad fija](https://github.com/decred/dcrdata/pull/1837) con Bittrex.
+
+Otro:
+- el [soporte](https://github.com/trezor/trezor-firmware/pull/1249) de Staking Decred se fusionó en el [repositorio](https://github.com/trezor/trezor-firmware/tree/master/core) de firmware para Trezor Model T y se incluyó en la [versión](https://github.com/trezor/trezor-firmware/blob/e67b3ab214a96885397f613fe8117c8193adcc0b/core/CHANGELOG.md) 2.4.0. Se necesita más trabajo al final de Decrediton, pero este es un gran hito
+- @fst_nml anunció una [recompensa](https://twitter.com/fst_nml/status/1404114567525978121) de $100 000 para construir la integración de Decred con [THORChain](https://docs.thorchain.org/), un protocolo de liquidez descentralizado entre cadenas basado en Tendermint, Cosmos y que utiliza Threshold Signature Schemes. El desarrollo ya está en [progreso](https://twitter.com/THORChain/status/1410176914619179009) ([discusión](https://www.reddit.com/r/decred/comments/o14da0/decred_community_member_willing_to_put_up_100k_to/)).
 
 
 
