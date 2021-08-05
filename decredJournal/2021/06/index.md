@@ -115,6 +115,70 @@ Sistema de gestión de contratistas (CMS):
 
 @lukebp compartió una buena [introducción educativa](https://twitter.com/lukebp_/status/1407089424924610572) sobre cómo Politea logra su fuerte auditabilidad criptográfica.
 
+### [vspd](https://github.com/decred/vspd)
+Orientado al usuario:
+- se [agregó](https://github.com/decred/vspd/pull/264) la parte de los tickets en vivo de VSP, así como su porcentaje revocado, a la página de inicio y la respuesta de la API de estado
+- se permitio que los administradores establezcan un [mensaje](https://github.com/decred/vspd/pull/269) personalizado en donde se mostrará en la página web y será devuelto por la API de estado cuando se cierre el VSP
+- ajustes de la interfaz de usuario de la [página admin](https://github.com/decred/vspd/pull/274)
+- eliminación de [caché mejorada](https://github.com/decred/vspd/pull/270) (evita que los usuarios vean recursos desactualizados)
+
+### Interno:
+- comparación de los [scripts](https://github.com/decred/vspd/pull/267) de transacciones en lugar de las direcciones al verificar los pagos de tarifas (esto es más eficiente y corrige algunos casos extremos)
+- [filtrado](https://github.com/decred/vspd/pull/265) de tickets de base de datos más rápido
+- aseguramiento de la altura de [compra de tickets](https://github.com/decred/vspd/pull/277) esté configurada para todos los tickets
+- manejo mejorado del [apagado](https://github.com/decred/vspd/pull/271)
+- [caché GUI](https://github.com/decred/vspd/pull/273) refactorizado para una mejor reutilización
+
+### [dcrpool](https://github.com/decred/dcrpool)
+La v1.2.0 ya esta [aquí](https://twitter.com/dnldd/status/1409819702654910465) y trae casi un año completo de desarrollo desde la v1.1.0. Vea todas las correcciones y mejoras en las notas de la [versión](https://github.com/decred/dcrpool/releases/tag/v1.2.0).
+
+Fusion en la versión maestra y v1.2.0:
+- seguimiento de [confirmación](https://github.com/decred/dcrpool/pull/334) de base de monedas reescrito para resolver los problemas restantes.
+
+### [DCRDEX](https://github.com/decred/dcrdex)
+- informes más precisos sobre el [estado de los pedidos](https://github.com/decred/dcrdex/pull/1094)
+- se agregó una descripción general de las [tarifas comerciales](https://github.com/decred/dcrdex/pull/1074) al README
+- [validación](https://github.com/decred/dcrdex/pull/1077) de partidos mejorada
+- almacenar los [pedidos archivados](https://github.com/decred/dcrdex/pull/1071) por separado para acelerar el procesamiento de los pedidos activos
+- Verifique las [versiones de los scripts](https://github.com/decred/dcrdex/pull/1107) (use diferentes métodos para dcrd 1.6 y 1.7) y prepárese para manejar diferentes versiones de los scripts (rama [backported](https://github.com/decred/dcrdex/pull/1108) v0.2)
+
+### dcrandroid
+- opción para [enviar el cambio](https://github.com/planetdecred/dcrandroid/pull/568 a una cuenta sin mezclar) (para mezclar antes de usar), e indicar a qué cuenta irá el cambio en la página Enviar
+- distinción en las [mezclas](https://github.com/planetdecred/dcrandroid/pull/565) con etiquetas e íconos únicos
+- actualización en traducción en [francés](https://github.com/planetdecred/dcrandroid/pull/567) 
+- ~ 3 correcciones de errores
+
+Combinado en [dcrlibwallet](https://github.com/planetdecred/dcrlibwallet) (biblioteca base para aplicaciones de Android / iOS y godcr):
+- filtros agregados para encontrar transacciones de [staking](https://github.com/planetdecred/dcrlibwallet/pull/201) [mixtas](https://github.com/planetdecred/dcrlibwallet/pull/195) o variado
+- [estadísticas](https://github.com/planetdecred/dcrlibwallet/pull/201) agregadas a través de transacciones y actividad de staking
+- opción para enviar el [cambio](https://github.com/planetdecred/dcrlibwallet/pull/199) a una cuenta sin mezclar
+- Se corrigió el saldo [insuficiente](https://github.com/planetdecred/dcrlibwallet/pull/189) al pagar las tarifas de los tickets de vspd.
+
+### [dcrios](https://github.com/planetdecred/dcrios)
+- opción para [enviar el cambio](https://github.com/planetdecred/dcrios/pull/807) a una cuenta sin mezclar (para mezclar antes de usar) e indicar a qué cuenta irá el cambio en la página Enviar
+- evitar el [screen sleep](https://github.com/planetdecred/dcrios/pull/798) mientras sincroniza, vuelve a escanear o mezclar
+- menú [desplegable](https://github.com/planetdecred/dcrios/pull/738) más flexible en la lista de carteras
+- [distensión](https://github.com/planetdecred/dcrios/pull/801) en el mixed con etiquetas e íconos únicos
+- Ajustes de la interfaz de usuario
+- ~ 7 correcciones de errores
+
+### [godcr](https://github.com/planetdecred/godcr)
+Orientado al usuario:
+- vistas implementadas: [actividad de los tickets](https://github.com/planetdecred/godcr/pull/439), [estadísticas](https://github.com/planetdecred/godcr/pull/445), [modalidad de votación](https://github.com/planetdecred/godcr/pull/468) en las propuestas, página de inicio que se muestra mientras se cargan las billeteras
+- Se agregaron [descripciones emergentes](https://github.com/planetdecred/godcr/pull/448) para los tickets
+- dirección para navegar a la [página anterior](https://github.com/planetdecred/godcr/pull/491)
+- se [muestra](https://github.com/planetdecred/godcr/pull/467) los nombres de las cuentas en las entradas y salidas de la transacción
+- limitación en [width](https://github.com/planetdecred/godcr/pull/444) ancho del contenido al desplegar la ventana
+- numerosas correcciones de errores y ajustes de la interfaz de usuario
+
+Developer:
+- código reutilizable extraído para [páginas](https://github.com/planetdecred/godcr/pull/459), [modales](https://github.com/planetdecred/godcr/pull/460), [notificaciones](https://github.com/planetdecred/godcr/pull/464) y [selector](https://github.com/planetdecred/godcr/pull/484) de cuenta (junto con refactorización y limpieza)
+- refactorizado para mejorar el uso de [dcrlibwallet](https://github.com/planetdecred/godcr/pull/475)
+- reemplazó de los botones de la subpágina global con instancias [locales](https://github.com/planetdecred/godcr/pull/492) para cada página (corrige las páginas que interfieren entre sí)
+- implementación más [recomendaciones](https://paste.sr.ht/~eliasnaur/cea1d29d6a5f96668b5e166c2f39ef596974574f) de Elias Naur (creador de la biblioteca Gio UI)
+
+godcr se acerca a la fase de prueba pública. Esperamos las versiones preliminares.
+
 
 
 ## Comunidad
