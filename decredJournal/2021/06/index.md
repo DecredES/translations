@@ -12,19 +12,19 @@ El hashrate de PoW ha experimentado una caída significativa, probablemente asoc
 
 Contenido
 
-- [Nuevo bug en el fondo de tesorería]()
-- [Desarrollo]()
-- [Comunidad]()
-- [Gobernanza]()
-- [Red]()
-- [Ecosistema]()
-- [Alcance]()
-- [Eventos]()
-- [Media]()
-- [Discusiones]()
-- [Mercado]()
-- [Relevantes externos]()
-- [Sobre]()
+- [Nuevo bug en el fondo de tesorería](https://github.com/DecredES/translations/blob/master/decredJournal/2021/06/index.md#nuevo-bug-en-el-fondo-de-tesorer%C3%ADa)
+- [Desarrollo](https://github.com/DecredES/translations/blob/master/decredJournal/2021/06/index.md#desarrollo)
+- [Comunidad](https://github.com/DecredES/translations/blob/master/decredJournal/2021/06/index.md#comunidad)
+- [Gobernanza](https://github.com/DecredES/translations/blob/master/decredJournal/2021/06/index.md#gobernanza)
+- [Red](https://github.com/DecredES/translations/blob/master/decredJournal/2021/06/index.md#red)
+- [Ecosistema](https://github.com/DecredES/translations/blob/master/decredJournal/2021/06/index.md#ecosistema)
+- [Alcance](https://github.com/DecredES/translations/blob/master/decredJournal/2021/06/index.md#alcance)
+- [Eventos](https://github.com/DecredES/translations/blob/master/decredJournal/2021/06/index.md#eventos)
+- [Media](https://github.com/DecredES/translations/blob/master/decredJournal/2021/06/index.md#media)
+- [Discusiones](https://github.com/DecredES/translations/blob/master/decredJournal/2021/06/index.md#discusiones)
+- [Mercado](https://github.com/DecredES/translations/blob/master/decredJournal/2021/06/index.md#mercados)
+- [Relevantes externos](https://github.com/DecredES/translations/blob/master/decredJournal/2021/06/index.md#relevantes-externos)
+- [Sobre esta edición](https://github.com/DecredES/translations/blob/master/decredJournal/2021/06/index.md#sobre-esta-edici%C3%B3n)
 
 
 ## Nuevo bug en el fondo de tesorería
