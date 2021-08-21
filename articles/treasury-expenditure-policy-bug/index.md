@@ -3,6 +3,8 @@ Bug en política de los gastos de la tesorería
 
 por MATHEUS DEGIOVANI - 25 DE JUNIO DEL 2021
 
+![cover](./assets/cover-bug.png)
+
 Los pagos de la nueva infraestructura del fondo de la tesorería descentralizada están actualmente bloqueados y se retrasarán hasta que se lleve a cabo una nueva votación para implementar un cambio en las reglas de consenso. Los pagos a los contratistas continuarán a través de la tesorería heredada hasta que se implementen y activen dichos cambios.
 
 *Ningún fondo de la tesorería descentralizada o de la tesorería heredada corre el riesgo de perderse.*
