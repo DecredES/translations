@@ -57,7 +57,7 @@ Consulte el [issue #44](https://blockcommons.red/politeia-digest/issue044/) y el
 
 ## Red
 
-**Hashrate**: el [hashrate](https://dcrdata.decred.org/charts?chart=hashrate&zoom=kqhwurpw-kru2wj65&scale=linear&bin=block&axis=time) de julio se abrió a ~ 71 Ph / sy cerró ~ 316 Ph / s, tocando fondo en 70 Ph / sy alcanzando un máximo de 334 Ph / s durante todo el mes.
+**Hashrate**: el [hashrate](https://dcrdata.decred.org/charts?chart=hashrate&zoom=kqhwurpw-kru2wj65&scale=linear&bin=block&axis=time) de julio se abrió a ~ 71 Ph / s y cerró ~ 316 Ph / s, tocando fondo en 70 Ph / s alcanzando un máximo de 334 Ph / s durante todo el mes.
 
 Distribución del hashrate [reportada](https://miningpoolstats.stream/decred) en los pools el 1 de agosto:
 
@@ -73,13 +73,13 @@ Distribución del hashrate [reportada](https://miningpoolstats.stream/decred) en
 - OKEx 0.08%
 - UUPool 0.06%.
 
-La distribución de 1,000 bloques [minados](https://miningpoolstats.stream/decred) antes del 1 de agosto coincidió estrechamente con el hashrate informado.
+La distribución de 1 000 bloques [minados](https://miningpoolstats.stream/decred) antes del 1 de agosto coincidió estrechamente con el hashrate informado.
 
 Hashrate se está recuperando de los eventos de junio en [China](https://www.coindesk.com/chinas-bitcoin-mining-crackdown-is-a-boon-for-miners-elsewhere) y nuevos grupos de minería se están uniendo a la red.
 
-**Staking**: el [precio de los tickets](https://dcrdata.decred.org/charts?chart=ticket-price&zoom=kqhwurpw-kru2wj65&bin=window&axis=time&visibility=true-true) varió entre 146.3–203.2 DCR, con un [promedio](https://dcrstats.com/) de 30 días de 190.7 DCR (+ 6).
+**Staking**: el [precio de los tickets](https://dcrdata.decred.org/charts?chart=ticket-price&zoom=kqhwurpw-kru2wj65&bin=window&axis=time&visibility=true-true) varió entre 146.3 – 203.2 DCR con un [promedio](https://dcrstats.com/) de 30 días de 190.7 DCR (+ 6).
 
-La [cantidad bloqueada](https://dcrdata.decred.org/charts?chart=ticket-pool-value&zoom=kqhwurpw-kru2wj65&scale=linear&bin=block&axis=time) fue de 7.43 a 7.88 millones DCR, lo que significa que entre el 56.3 y 59.8%  del suministro circulante [participó](https://dcrdata.decred.org/charts?chart=stake-participation&zoom=kqhwurpw-kru2wj65&scale=linear&bin=block&axis=time) en el proof-of-stake.
+La [cantidad bloqueada](https://dcrdata.decred.org/charts?chart=ticket-pool-value&zoom=kqhwurpw-kru2wj65&scale=linear&bin=block&axis=time) fue de 7.43 a 7.88 millones DCR lo que significa que entre el 56.3 y 59.8% del suministro circulante [participó](https://dcrdata.decred.org/charts?chart=stake-participation&zoom=kqhwurpw-kru2wj65&scale=linear&bin=block&axis=time) en el proof-of-stake.
 
 El precio de los tickets tuvo una caída inusual por debajo de los mínimos del 2020 pero luego se recuperó rápidamente con un fuerte soporte de compra.
 
@@ -103,21 +103,21 @@ La red [Lightning Network](https://ln-map.jholdstock.uk/) de Decred ha visto 36 
 
 ## Ecosistema
 
-Le damos la bienvenida a la nueva instancia de vspd [dcrvsp.dittrex.com](http://dcrvsp.dittrex.com/) que reemplaza su VSP heredado este mismo fue [eliminado](https://github.com/decred/dcrwebapi/pull/140) de la lista en mayo y se cerró en julio.
+Le damos la bienvenida a la nueva instancia de vspd [dcrvsp.dittrex.com](http://dcrvsp.dittrex.com/) que reemplaza su VSP heredado, este mismo fue [eliminado](https://github.com/decred/dcrwebapi/pull/140) de la lista en mayo y se cerró en julio.
 
 Legacy VSP [pool.d3c.red](https://pool.d3c.red/) de @karamble votó su ticket final y fue cerrado. Los usuarios son bienvenidos al servidor de reemplazo en [vsp.decredcommunity.org](http://vsp.decredcommunity.org/).
 
-Hasta ahora 8 VSP heredados se han eliminado de la lista (3 cierres, 1 estado desconocido, 4 aún votando) y 9 todavía están en la lista. El estado de la migración al [nuevo sistema VSP](https://blog.decred.org/2020/06/02/A-More-Private-Way-to-Stake/) se resume en [esta tabla](https://github.com/decred/vspd/issues/231#issuecomment-774877129). Se [recomienda](https://twitter.com/JamieHoldstock/status/1405069123453784065) que los usuarios de VSP heredados se actualicen a vspd para evitar el riesgo de perder tickets cuando dcrstakepool deje de funcionar (por ejemplo, si se activa una nueva actualización de consenso).
+Hasta ahora 8 VSP heredados se han eliminado de la lista (3 cierres, 1 estado desconocido, 4 aún votando) y 9 todavía están en la lista. El estado de la migración al [nuevo sistema VSP](https://blog.decred.org/2020/06/02/A-More-Private-Way-to-Stake/) se resume en [esta tabla](https://github.com/decred/vspd/issues/231#issuecomment-774877129). Se [recomienda](https://twitter.com/JamieHoldstock/status/1405069123453784065) que los usuarios de VSP heredados se actualicen a vspd para evitar el riesgo de perder tickets cuando dcrstakepool deje de funcionar (por ejemplo: si se activa una nueva actualización de consenso).
 
 La [lista de VSP](https://decred.org/vsp/) se actualizó para mostrar el porcentaje de tickets revocados ya que es una métrica útil al elegir un VSP.
 
-[ViaBTC](https://www.viabtc.com/) anunció el [lanzamiento](https://viabtc.medium.com/viabtc-pool-unveils-dcr-on-chain-co-governance-under-hybrid-consensus-61fcbd133a55) de la minería DCR celebrado por un "Carnaval de minería sin cargo" hasta el 25 de agosto. El grupo admite los [métodos](https://support.viabtc.com/hc/en-us/articles/4403972374297-DCR-Mining-Pool-Launched-Mine-with-ZERO-Fees-For-30-days) de pago PPS +, PPLNS y SOLO.
+[ViaBTC](https://www.viabtc.com/) anunció el [lanzamiento](https://viabtc.medium.com/viabtc-pool-unveils-dcr-on-chain-co-governance-under-hybrid-consensus-61fcbd133a55) de la minería DCR celebrado por un "Carnaval de minería sin cargos" hasta el 25 de agosto. El grupo admite los [métodos](https://support.viabtc.com/hc/en-us/articles/4403972374297-DCR-Mining-Pool-Launched-Mine-with-ZERO-Fees-For-30-days) de pago PPS +, PPLNS y SOLO.
 
 El pool [OKEx](https://www.okex.com/pool) ha estado minando DCR desde [agosto del 2020](https://www.okex.com/academy/en/how-to-earn-cryptocurrency-with-okex-pool) pero en julio finalmente minó algunos bloques según [miningpoolstats.stream](https://miningpoolstats.stream/decred).
 
 [Bitfinex](https://www.bitfinex.com/) [anunció previamente](https://twitter.com/bitfinex/status/1421032832848302081) un listado de DCR y fue a principios de [agosto](https://twitter.com/bitfinex/status/1423210403774009345) donde publicó el trading entre DCR / USD.
 
-Advertencia: los autores de la revista DEcred no tienen idea de la confiabilidad de ninguno de los servicios mencionados anteriormente. Haga su propia investigación antes de confiar su información personal o sus activos a cualquier entidad.
+Advertencia: los autores de la revista Decred no tienen idea de la confiabilidad de ninguno de los servicios mencionados anteriormente. Haga su propia investigación antes de confiar su información personal o sus activos a cualquier entidad.
 
 Únase a nuestro chat  [#services](https://chat.decred.org/#/room/#services:decred.org) para seguir las actualizaciones del ecosistema Decred.
 
