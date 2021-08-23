@@ -23,7 +23,7 @@ Contenido:
 - Sobre
 
 ## Desarrollo
-Para ver la sección completa de desarrollo puedes visitar el GitHub de la traducción completa.
+Para ver la sección completa de desarrollo puede visitar el GitHub de la traducción completa.
 
 > Link del repo en git.
 
