@@ -1,6 +1,8 @@
 Revista Decred Julio 2021
 =========================
 
+![portada](./assets/07_2021.jpg)
+
 Lo más destacado de julio:
 
 -   Ahora hay 3 cambios de consenso en varias etapas de desarrollo y la revocación de tickets ya está atrayendo algo de cobertura por la prensa.
