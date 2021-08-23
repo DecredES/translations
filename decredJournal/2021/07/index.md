@@ -64,7 +64,7 @@ Distribución del hashrate [reportada](https://miningpoolstats.stream/decred) en
 - Poolin 58%
 - F2Pool 23%
 - AntPool 6%
-- [BTC.com](http://btc.com/) 4%
+- BTC.com 4%
 - Easy2Mine 4%
 - Luxor 2.3%
 - HuobiPool 1%
