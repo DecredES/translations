@@ -5,7 +5,7 @@ Revista Decred Julio 2021
 
 Lo más destacado de julio:
 
--   Ahora hay 3 cambios de consenso en varias etapas de desarrollo y la revocación de tickets ya está atrayendo algo de cobertura por la prensa.
+-   Ahora hay 3 cambios de consenso en varias etapas de desarrollo y la revocación de tickets ya está atrayendo algo de cobertura por medio de la prensa.
 -   Progreso sólido en todos los repositorios habituales: dcrd obtuvo de nuevo un porcentaje del 10% de rápidez en el tiempo de descarga inicial de blockchain y DCRDEX ha agregado la integración central de ETH.
 -   Ha sido un gran mes para las entrevistas: con Decred in Depth grabando episodios con varios miembros conocidos de la comunidad y algunas otras publicaciones junto con podcasts y entrevistas con desarrolladores del proyecto.
 
