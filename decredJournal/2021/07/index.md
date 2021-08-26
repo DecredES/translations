@@ -25,7 +25,7 @@ Contenido:
 - Sobre
 
 ## Desarrollo
-El trabajo que se informa a continuación tiene el estado "fusionado con el maestro", a menos que se indique lo contrario. Significa que el trabajo se completa, se revisa e integra en el código fuente que los usuarios avanzados pueden [crear y ejecutar](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c), pero aún no está disponible en los binarios de la versión para los usuarios habituales.
+El trabajo que se informa a continuación tiene el estado "fusionado con el maestro" al menos que se indique lo contrario. Significa que el trabajo se completa, se revisa e integra en el código fuente para que los usuarios avanzados puedan [crear y ejecutar](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c) pero aún no está disponible en la versión de binarios para los usuarios habituales.
 
 ### [dcrd](https://github.com/decred/dcrd)
 
