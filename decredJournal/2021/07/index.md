@@ -66,6 +66,8 @@ Interno:
 - pruebas automatizadas para la página de [transacciones](https://github.com/decred/decrediton/pull/3518)
 - se eliminó el uso de la biblioteca de registro de [Winston](https://github.com/decred/decrediton/pull/3536) para reducir el árbol de dependencia del proyecto (y la superficie de ataque de la cadena de suministro).
 
+![LV](./assets/LN.png)
+
 ### [Politeia](https://github.com/decred/politeia)
 
 Orientado al usuario:
@@ -143,6 +145,8 @@ traducción al [vietnamita](https://github.com/planetdecred/dcrios/pull/809) act
 - páginas y modales agrupados en [paquetes](https://github.com/planetdecred/godcr/pull/512)
 - 6+ correcciones de errores
 
+![godcr](./assets/godcr.png)
+
 ### [dcrdata](https://github.com/decred/dcrdata)
 
 Orientado al usuario:
@@ -174,6 +178,8 @@ Interno y desarrollador:
 ### [Complemento de WooCommerce](https://github.com/karamble/decred-woocommerce-plugin)
 
 @karamble lanzó un nuevo complemento para aceptar pagos DCR en las tiendas WooCommerce. Puede generar direcciones de pago utilizando XPUB (clave pública extendida) de la cuenta de billetera. De esta manera cada pago utiliza una nueva dirección única mientras el servidor web de la tienda no tiene acceso a la billetera.
+
+![commerce](./assets/commerce.png)
 
 Otro:
 
