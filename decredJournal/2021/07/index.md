@@ -25,9 +25,160 @@ Contenido:
 - Sobre
 
 ## Desarrollo
-Para ver la sección completa de desarrollo puede visitar el GitHub de la traducción completa.
+El trabajo que se informa a continuación tiene el estado "fusionado con el maestro", a menos que se indique lo contrario. Significa que el trabajo se completa, se revisa e integra en el código fuente que los usuarios avanzados pueden [crear y ejecutar](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c), pero aún no está disponible en los binarios de la versión para los usuarios habituales.
 
-> Link del repo en git.
+### [dcrd](https://github.com/decred/dcrd)
+
+- se actualizó la implementación de `UtxoBackend` para usar `leveldb` directamente en lugar de usar el paquete de `database`. Esto da como resultado una descarga inicial de la blockchain  un 10% más rápida y un uso de memoria reducido en un 12%
+- índice de bloque modificado para usar [llaves cortas](https://github.com/decred/dcrd/pull/2685), lo que resulta en un ahorro de memoria de ~ 30 MiB
+- se agregaron [límites](https://github.com/decred/dcrd/pull/2675) de tamaño para las solicitudes de RPC para ayudar a fortalecer aún más el servidor contra posibles abusos en configuraciones no estándar en redes mal configuradas.
+- se agregó una verificación de [origen](https://github.com/decred/dcrd/pull/2676) más estricta para las conexiones WebSocket
+pequeñas correcciones y limpieza
+
+En este punto tenemos 3 próximos cambios de consenso en diferentes etapas de desarrollo:
+
+- volver a la política de gastos de tesorería propuesta originalmente (para [arreglar los gastos](https://github.com/DecredES/translations/blob/master/decredJournal/2021/06/index.md#nuevo-bug-en-el-fondo-de-tesorer%C3%ADa) de la nueva tesorería) tiene un borrador de [DCP](https://github.com/decred/dcps/pull/20) y un borrador de [pull request](https://github.com/decred/dcrd/pull/2680)
+- las actualizaciones de versión explícitas tienen una [propuesta](https://github.com/decred/dcrd/pull/2680) aprobada y algún código de soporte ya combinado (como el manejo de scripts estándar que cubrimos [en junio](https://github.com/DecredES/translations/blob/master/decredJournal/2021/06/index.md#dcrd))
+- la revocación automática de tickets tiene una [propuesta](https://proposals.decred.org/record/e2d7b7d) aprobada
+
+Un beneficio menos obvio de la revocación automática de tickets es que simplifica la implementación del [ticket splitting](https://www.reddit.com/r/decred/comments/ot8x7o/decred_memelord_13_part_tweet_thread_113_decreds/h6w1vnk/).
+
+### [dcrwallet](https://github.com/decred/dcrwallet)
+
+- se agregó un método RPC que permitirá a Decrediton descubrir direcciones activas de manera más eficiente
+- se agregó un método RPC para [revocar](https://github.com/decred/dcrwallet/pull/2061) tickets en modo SPV (también para Decrediton)
+- se solucionó los problemas de concurrencia al [desbloquear](https://github.com/decred/dcrwallet/pull/2067) la billetera
+
+### [Decrediton](https://github.com/decred/decrediton)
+
+Orientado al usuario:
+
+- se agregó una ventana de [confirmación de semillas](https://github.com/decred/decrediton/pull/3521) al flujo de creación de la billetera
+- se diseñó la interfaz de usuario mejorada para la página de [conexión](https://github.com/decred/decrediton/pull/3530) para la billetera LN
+- [puntos de interrupción](https://github.com/decred/decrediton/pull/3525) de diseño receptivos simplificados (para facilitar la integración con DCRDEX)
+- no se permitió algunos [caracteres](https://github.com/decred/decrediton/pull/3511) problemáticos en los nombres de las billeteras
+- se corrigió la selección de [filtros tx](https://github.com/decred/decrediton/issues/3528) en la página de Historial de transacciones
+- ~ 7 correcciones.
+
+Interno:
+
+- migración a la nueva [API de Politeia](https://github.com/decred/decrediton/pull/3495)
+- pruebas automatizadas para la página de [transacciones](https://github.com/decred/decrediton/pull/3518)
+- se eliminó el uso de la biblioteca de registro de [Winston](https://github.com/decred/decrediton/pull/3536) para reducir el árbol de dependencia del proyecto (y la superficie de ataque de la cadena de suministro).
+
+### [Politeia](https://github.com/decred/politeia)
+
+Orientado al usuario:
+
+- capturación de los [metadatos](https://github.com/decred/politeiagui/pull/2469) de las propuestas adicionales como límite de financiación en USD, fecha de inicio, fecha de finalización estimada y dominio. Esto nos permitirá mejorar y automatizar la validación de facturas de contratistas y también generar estadísticas de propuestas en Politeia.
+- se agregó una [limitación](https://github.com/decred/politeia/pull/1448) de velocidad para notificaciones por correo electrónico para evitar comportamientos maliciosos
+- mostrar quién [censuró](https://github.com/decred/politeiagui/pull/2454) un registro su por qué y cuándo
+- UX mejorada para la descarga de [paquetes de propuestas](https://github.com/decred/politeiagui/pull/2453)
+- se prohibió algunos elementos de [Markdown](https://github.com/decred/politeiagui/pull/2494) en los comentarios para evitar el abuso del tamaño del texto
+- se puede mostrar [placeholders](https://github.com/decred/politeiagui/pull/2484) mientras se cargan los datos de la propuesta
+- se puede mostrar una [advertencia](https://github.com/decred/politeiagui/pull/2500) sobre la posible pérdida de datos al guardar borradores
+- ~ 11 correcciones de errores de frontend y ~ 1 backend
+
+Desarrollo interno:
+
+- se permite múltiples valores en la [configuración del plugin](https://github.com/decred/politeia/pull/1451)
+- cobertura de prueba agregada para la [validación](https://github.com/decred/politeia/pull/1453) de las propuestas
+- pruebas de IU automatizadas para la [lista de propuestas](https://github.com/decred/politeiagui/pull/2473)
+- documentos de desarrollado extendidos
+- ~ 1 frontend y ~ 7 correcciones de errores de backend
+
+CMS:
+
+- ~ 1 frontend y ~ 2 correcciones de errores de backend
+
+Los cambios pendientes de implementación están marcados con una etiqueta `pi-not-deployed` en los repositorios [politeiagui](https://github.com/decred/politeiagui/issues?q=label%3Api-not-deployed) y [politeia](https://github.com/decred/politeia/pulls?q=label%3Api-not-deployed). De manera similar los cambios en el alcance de la [propuesta](https://proposals.decred.org/record/91cfcc8) de desarrollo se denominan [`91cfcc8`](https://github.com/decred/politeia/issues?q=label%3A91cfcc8).
+
+### [DCRDEX](https://github.com/decred/dcrdex)
+
+Orientado al usuario:
+
+- manejar los intentos de registrarse con [saldo insuficiente](https://github.com/decred/dcrdex/pull/1092)
+- registro de transacciones de [swap refund](https://github.com/decred/dcrdex/pull/1110) para que el usuario pueda recuperar fondos cuando se pierda el acceso al cliente y los registros se puedan encuentrar aún disponibles
+- se puede [exportar](https://github.com/decred/dcrdex/pull/1109) las ordenes en archivo CSV
+- agrupación de las ordenes con la [misma](https://github.com/decred/dcrdex/pull/1090) tarifa en una table row
+- se muestra el precio actual en el [título](https://github.com/decred/dcrdex/pull/1117) de la ventana del navegador
+- se muestra errores del pedido en el [formulario](https://github.com/decred/dcrdex/pull/1093) en lugar de la campana de notificación
+- 4+ correcciones de errores
+
+Interno:
+
+- solo permite solicitar una [preimagen](https://github.com/decred/dcrdex/pull/1106) al cliente para protegerse contra un comportamiento malicioso del servidor
+- el tamaño del lote y el paso de la tasa hicieron [parámetros de mercado](https://github.com/decred/dcrdex/pull/1102) en lugar de ser parámetros de assets
+- [dependencias](https://github.com/decred/dcrdex/pull/1111) npm actualizadas
+- migración al paquete [`stdaddr`](https://github.com/decred/dcrdex/pull/1096) de dcrd
+- 4+ correcciones de errores
+
+Soporte de Ethereum:
+
+- Infraestructura básica de [ETH](https://github.com/decred/dcrdex/pull/1005) del lado del cliente (el uso de la red principal está deshabilitado por ahora)
+- almacenamiento de saldo de ETH en unidades [gwei](https://github.com/decred/dcrdex/pull/1078) para adaptarse a enteros de 64 bits
+- implementación del [estado de sincronización](https://github.com/decred/dcrdex/pull/1082) de ETH junto a información de tasa de tarifa (con una solución se solicitó la función de Geth [faltante](https://github.com/ethereum/go-ethereum/issues/23099))
+
+Se han actualizado algunas [correcciones](https://github.com/decred/dcrdex/commits/release-v0.2) a una próxima versión v0.2.1.
+
+Se comenzó a trabajar para reemplazar la tarifa de registro con [bonos de fidelidad](https://github.com/decred/dcrdex/pull/1120) donde los usuarios bloquean fondos para usar DCRDEX (como un [desincentivo](https://twitter.com/lukebp_/status/1412061031061508098) contra el mal comportamiento) pero pueden canjearlos después de cierto tiempo. Esto crea un costo de tiempo para usar DCRDEX en lugar de un costo monetario.
+
+### [dcrandroid](https://github.com/planetdecred/dcrandroid)
+
+@raedah comentó sobre la cuestión de cuándo se admitirá el staking en las aplicaciones móviles:
+
+> El soporte para el staking vspd de nuevo estilo se ha integrado en dcrlibwallet para godcr y actualmente se encuentra en prueba final. Después de que se lance godcr, será fácil para los desarrolladores importar la misma funcionalidad de staking en las aplicaciones móviles. Sin embargo, no hay un gran incentivo para priorizar la construcción de la IU de staking móvil hasta que haya una billetera de hardware funcional con la que se pueda emparejar. [(2021–07–19)](https://www.reddit.com/r/decred/comments/okrlg1/mobile_staking/h5rps6h/)
+
+### [dcrios](https://github.com/planetdecred/dcrios)
+
+traducción al [vietnamita](https://github.com/planetdecred/dcrios/pull/809) actualizada
+
+### [godcr](https://github.com/planetdecred/godcr)
+
+- [renderizado en HTML](https://github.com/planetdecred/godcr/pull/469) implementado para mostrar texto con estilo
+- implementación de [toggle](https://github.com/planetdecred/godcr/pull/487) widget personalizado
+- se ahora se puede [ocultar](https://github.com/planetdecred/godcr/pull/493) los saldos de staking y la cuenta importada cuando no tienen fondos
+- página de [licencia](https://github.com/planetdecred/godcr/pull/516) agregada
+- actualizaciones de la interfaz de usuario y limpieza masiva de código para: lista de [propuestas](https://github.com/planetdecred/godcr/pull/513) y detalles, [billetera](https://github.com/planetdecred/godcr/pull/496), [billeteras](https://github.com/planetdecred/godcr/pull/493), [envío](https://github.com/planetdecred/godcr/pull/524), [StakeShuffle](https://github.com/planetdecred/godcr/pull/534) y varias páginas de [tickets](https://github.com/planetdecred/godcr/pull/539)
+- páginas y modales agrupados en [paquetes](https://github.com/planetdecred/godcr/pull/512)
+- 6+ correcciones de errores
+
+### [dcrdata](https://github.com/decred/dcrdata)
+
+Orientado al usuario:
+
+- se corrigió el cambio de [status del voto](https://github.com/decred/dcrdata/pull/1838) en la página de Proposals
+- [umbral](https://github.com/decred/dcrdata/pull/1813) de quórum de agenda fijo
+- se cambió la página de bloqueo para usar términos ["aprobados" y "rechazados"](https://github.com/decred/dcrdata/pull/1841) en lugar de "válidos" / "no válidos".
+
+Interno y desarrollador:
+
+- sincronización inicial [optimizada](https://github.com/decred/dcrdata/pull/1840), tabla de vouts, caché de direcciones y rendimiento de la página de búsqueda
+- rendimiento [optimizado](https://github.com/decred/dcrdata/pull/1844) e inicio mejorado
+- se pasó de la codificación gob a la [serialización](https://github.com/decred/dcrdata/pull/1843) personalizada del grupo de tickets, lo que hace que el inicio sea ~ 5 segundos más rápido
+- [purga](https://github.com/decred/dcrdata/pull/1842) fija de vouts
+- se agregó un [arnés de prueba](https://github.com/decred/dcrdata/pull/1778) usando la cadena simnet en lugar del snapshot dcrdata
+
+### [docs](https://github.com/decred/dcrdocs)
+
+- arreglo de [enlaces](https://github.com/decred/dcrdocs/pull/1177) caídos
+- docs de [gominer](https://github.com/decred/dcrdocs/pull/1178) eliminados
+- [archivo](https://docs.decred.org/governance/consensus-rule-voting/consensus-vote-archive/) [actualizado](https://github.com/decred/dcrdocs/pull/1174) de votos por consenso
+
+### [decred.org](http://decred.org/)
+
+- porcentaje agregado de tickets [revocados](https://github.com/decred/dcrweb/pull/993) a la lista de VSP
+- mostrar los [comunicados](https://decred.org/) de prensa y las publicaciones más recientes en la página de inicio de [decred.org](http://decred.org/)
+- agregó el [comunicado de prensa](https://decred.org/press/2021-05-25_dex_decrediton/) sobre la integración de DCRDEX en Decrediton
+
+### [Complemento de WooCommerce](https://github.com/karamble/decred-woocommerce-plugin)
+
+@karamble lanzó un nuevo complemento para aceptar pagos DCR en las tiendas WooCommerce. Puede generar direcciones de pago utilizando XPUB (clave pública extendida) de la cuenta de billetera. De esta manera cada pago utiliza una nueva dirección única mientras el servidor web de la tienda no tiene acceso a la billetera.
+
+Otro:
+
+- hemos perdido por completo dos repositorios jovenes de Rust en donde se implementaban las API de Decred a pesar de no recibir nuevas confirmaciones desde noviembre-diciembre del 2020
+- el programa Bug Bounty informó estadísticas al final de la Fase 3 (30 de junio): un total de 193 envíos procesados de los cuales 18 son elegibles para un pago. Se han aumentado las cantidades máximas de recompensas.
 
 ## Comunidad
 
