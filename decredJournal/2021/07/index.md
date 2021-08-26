@@ -18,7 +18,7 @@ Contenido:
 - [Ecosistema](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#ecosistema)
 - [Alcance](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#alcance)
 - [Eventos](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#eventos)
-- [Medios]()
+- [Medios](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#medios)
 - [Discusiones](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#discusiones)
 - [Mercados](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#mercados)
 - [Noticias Relevantes](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#noticias-relevantes)
