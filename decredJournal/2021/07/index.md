@@ -11,18 +11,18 @@ Lo más destacado de julio:
 
 Contenido:
 
-- Desarrollo
-- Comunidad
-- Gobernanza
-- Red
-- Ecosistema
-- Alcance
-- Eventos
-- Medios
-- Discusiones
-- Mercados
-- Noticias Relevantes
-- Sobre
+- [Desarrollo](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#desarrollo)
+- [Comunidad](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#comunidad)
+- [Gobernanza](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#gobernanza)
+- [Red](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#red)
+- [Ecosistema](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#ecosistema)
+- [Alcance](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#alcance)
+- [Eventos](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#eventos)
+- [Medios]()
+- [Discusiones](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#discusiones)
+- [Mercados](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#mercados)
+- [Noticias Relevantes](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#noticias-relevantes)
+- [Sobre esta edición](https://github.com/DecredES/translations/blob/master/decredJournal/2021/07/index.md#sobre-esta-edici%C3%B3n)
 
 ## Desarrollo
 El trabajo que se informa a continuación tiene el estado "fusionado con el maestro" al menos que se indique lo contrario. Significa que el trabajo se completa, se revisa e integra en el código fuente para que los usuarios avanzados puedan [crear y ejecutar](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c) pero aún no está disponible en la versión de binarios para los usuarios habituales.
@@ -307,7 +307,7 @@ Asistido:
 - 10 de julio - [YOUCATHON: Juventud por el cambio y la acción (100% digital)](https://decredcommunity.github.io/events/index/20210710.1) - Youssoufia, Marruecos. La escuela de informática YouCode organizó un hackathon entre dos campus en Youssoufia y Safi, conectados a través de una videoconferencia. @arij fue invitada a hablar sobre la tecnología blockchain. En su charla de ~ 80 minutos explicó la tecnología y demostró una billetera Decred y la plataforma Politeia. Las preguntas se referían a cómo se puede usar esto para crear aplicaciones y qué oportunidades existen para trabajar en proyectos de blockchain por lo que @arij explicó su papel en Decred y como unirse.
 - Desde principios del 2021 Decred es partidario del [programa educativo](https://twitter.com/IECarballo/status/1417491314191519751) sobre criptomonedas y tecnología blockchain organizado por la Escuela de Negocios de la Universidad Católica de Argentina y la ONG Bitcoin Argentina.
 
-## Media
+## Medios
 
 Artículos seleccionados:
 
