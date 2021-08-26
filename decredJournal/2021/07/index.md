@@ -175,7 +175,7 @@ Interno y desarrollador:
 - mostrar los [comunicados](https://decred.org/) de prensa y las publicaciones más recientes en la página de inicio de [decred.org](http://decred.org/)
 - agregó el [comunicado de prensa](https://decred.org/press/2021-05-25_dex_decrediton/) sobre la integración de DCRDEX en Decrediton
 
-### [Complemento de WooCommerce](https://github.com/karamble/decred-woocommerce-plugin)
+### [Plugin WooCommerce](https://github.com/karamble/decred-woocommerce-plugin)
 
 @karamble lanzó un nuevo complemento para aceptar pagos DCR en las tiendas WooCommerce. Puede generar direcciones de pago utilizando XPUB (clave pública extendida) de la cuenta de billetera. De esta manera cada pago utiliza una nueva dirección única mientras el servidor web de la tienda no tiene acceso a la billetera.
 
