@@ -77,3 +77,5 @@ Hoy en día, muchos capitalistas de riesgo son demasiado codiciosos y solo está
 Puedes seguir a Decred en Twitter @decredproject
 
 **Muchísimas gracias por esta entrevista. Esto fue muy inspirador.**
+
+Artículo original: https://medium.com/authority-magazine/the-future-is-now-steven-wagner-of-raedah-group-on-how-their-technological-innovation-will-shake-4f272ced222f
