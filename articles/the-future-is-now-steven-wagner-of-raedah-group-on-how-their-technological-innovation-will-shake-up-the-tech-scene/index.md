@@ -74,7 +74,7 @@ Hoy en día, muchos capitalistas de riesgo son demasiado codiciosos y solo está
 
 **¿Cómo pueden seguirte nuestros lectores en las redes sociales?**
 
-Puedes seguir a Decred en Twitter @decredproject
+Puedes seguir a Decred en Twitter [@decredproject](https://twitter.com/decredproject?lang=en)
 
 **Muchísimas gracias por esta entrevista. Esto fue muy inspirador.**
 
