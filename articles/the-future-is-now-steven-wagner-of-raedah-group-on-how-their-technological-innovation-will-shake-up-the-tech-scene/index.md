@@ -2,6 +2,8 @@
 
 Una entrevista de Fotis Georgiadis
 
+![RD](./assets/rd.jpeg)
+
 El mejor marketing de un producto suele ser la calidad del producto en sí. Creé el proyecto GoDCR que ha estado en desarrollo durante algunos años y está casi listo para ser lanzado como la aplicación de próxima generación de billetera para escritorio de Decred . El objetivo es mejorar la usabilidad y la accesibilidad a esta tecnología para las personas de todo el mundo.
 
 ...
