@@ -1,4 +1,4 @@
-# El Futuro Es Ahora: Steven Wagner De Raedah Group Habla Sobre Cómo Su Innovación Tecnológica Sacudirá La Escena Tecnológica
+# El Futuro Es Ahora: Steven Wagner De Raedah Group Habla Sobre Cómo Su Innovación Sacudirá La Escena Tecnológica
 
 Una entrevista de Fotis Georgiadis
 
