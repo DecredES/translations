@@ -124,7 +124,7 @@ Hotbit Korea ha eliminado su par DCR / KRW según lo [informado](https://twitter
 Únase a nuestro chat [#services](https://chat.decred.org/#/room/#services:decred.org) para seguir las actualizaciones del ecosistema Decred.
 ## Alcance
 
-Monde PR tuvo un mes reducido en labor después de que su segunda [propuesta](https://proposals-archive.decred.org/proposals/c81926b) terminara en julio. @l1ndseymm estuvo manteniendo las oportunidades actuales también se mantuvo respondiendo a las consultas entrantes mientras elaboraba la [tercera propuesta](https://proposals.decred.org/record/58d9f46) la cual comenzó a votarse en septiembre.
+Monde PR tuvo un mes reducido en labor después de que su segunda [propuesta](https://proposals-archive.decred.org/proposals/c81926b) terminara en julio. @l1ndseymm estuvo manteniendo oportunidades y trabajo actuales. También se mantuvo respondiendo a las consultas entrantes mientras elaboraba la [tercera propuesta](https://proposals.decred.org/record/58d9f46) la cual comenzó a votarse en septiembre.
 ## Eventos
 
 Decred se convirtió en partidario de un programa educativo sobre tecnología de cripto y blockchain organizado por la Escuela de Negocios de la Universidad Católica de Argentina y la ONG Bitcoin Argentina. Decred fue [invitado](https://matrix.to/#/!clHjlICBEtCtAdTupf:decred.org/$-CkRPUnXB8spWofBTk3nA3UAr2u4ofpCIzaoCJuoUag) como resultado de conexiones pasadas entre Bitcoin Argentina y nuestro equipo de alcance [español](https://twitter.com/Decred_ES) donde se incluyó materiales de marketing (junto con otras marcas). El [taller](http://uca.edu.ar/es/blockchain-y-criptoactivos) comenzó el 8 de septiembre y tendrá una duración de 10 semanas.
