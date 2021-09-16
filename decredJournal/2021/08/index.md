@@ -128,6 +128,37 @@ Monde PR tuvo un mes reducido en labor después de que su segunda [propuesta](ht
 ## Eventos
 
 Decred se convirtió en partidario de un programa educativo sobre tecnología de cripto y blockchain organizado por la Escuela de Negocios de la Universidad Católica de Argentina y la ONG Bitcoin Argentina. Decred fue [invitado](https://matrix.to/#/!clHjlICBEtCtAdTupf:decred.org/$-CkRPUnXB8spWofBTk3nA3UAr2u4ofpCIzaoCJuoUag) como resultado de conexiones pasadas entre Bitcoin Argentina y nuestro equipo de alcance [español](https://twitter.com/Decred_ES) donde se incluyó materiales de marketing (junto con otras marcas). El [taller](http://uca.edu.ar/es/blockchain-y-criptoactivos) comenzó el 8 de septiembre y tendrá una duración de 10 semanas.
+## Medios
+
+**Artículos seleccionados:**
+
+- The Suppressor parte 1: Guerra de desgaste por @tacorevenge ([medium](https://medium.com/@tacorevenge/the-suppressor-part-1-war-of-attrition-3081a61b202b))
+- El Futuro Es Ahora: Steven Wagner De Raedah Group Habla Sobre Cómo Su Innovación Sacudirá La Escena Tecnológica por Fotis Georgiadis (medium)(poner el link en el articulo en español)
+- Una de las criptomonedas mas rentables para la minería es una de la que quizás nunca hayas oído hablar y ha subido un 1 300% desde su mínimo del 2020. El CEO de la granja minera, Josh Metnick explica la criptografía y qué mineros y grupos usar por Laila Maidan ([businessinsider.com](https://www.businessinsider.com/profitable-crypto-to-mine-according-to-ceo-mining-farm-navier-2021-8?r=MX&IR=T) paywalled ([tipo de](https://twitter.com/exitusdcr/status/1429414135582937088)...))
+
+> “Es un proyecto legítimo en toda su extensión. En términos relativos, como en los años criptográficos, ha existido por un tiempo. Y hay algunas personas inteligentes y éticas involucradas en eso ” dijo Metnick.
+
+**Videos:**
+
+- Decred in Depth #41 — Stephen Palley + Gabriel Shapiro (Lexnode) + Luke Powell por @elima_iii ([youtube](https://www.youtube.com/watch?v=9TXoyRv_Z8U))
+- Decred in Depth #42 — Jonathan Chappelow + DCRDEX por @elima_iii ([youtube](https://www.youtube.com/watch?v=dRjAalxS3r8))
+- Decred News August — Blockchain governance in action, new network highs, exciting proposals & more! por @Exitus ([youtube](https://www.youtube.com/watch?v=6ifueUAWy_c))
+- Decred’s ticket voting system — Decred Fundamentals por @phoenixgreen ([youtube](https://www.youtube.com/watch?v=LEO0vHdY3gs))
+- Tax education and Decred por @phoenixgreen ([youtube](https://www.youtube.com/watch?v=-26obfV2e84))
+- Decred is heating up for something big por @phoenixgreen ([youtube](https://www.youtube.com/watch?v=n6ATfW_vnCg))
+- Decred Price Analysis — 4th August 2021 por Brave New Coin ([youtube](https://www.youtube.com/watch?v=NOlvAI43VSY))
+
+Chris Burniske mencionó a Decred en una entrevista de julio en [Original Sins of Crypto](https://www.youtube.com/watch?v=gLbzfZKf_ro&t=3942s) con Jason Yanowitz de Blockworks:
+
+> Jason: Sin embargo ¿cómo se puede confiar? Como si todo el mundo es democrático, hasta que obtienen el poder y luego el poder los corrompe. Me encanta el concepto de DAO y me encanta el concepto de DeFi , pero mi mayor preocupación es ¿estamos confiando en estos "CEO de DeFi DAO" en que se descentralizarán y cederán poder?
+
+Chris: Realmente depende de la génesis de la DAO. No todos los DAO son iguales. Aquí es donde para mí el estándar de oro de cómo se inició un DAO sigue siendo Decred.
+
+**Traducciones:**
+
+La Revista Decred de julio del 2021 se [tradujo](https://xaur.github.io/decred-news/) al árabe (@arij, @ abdulrahman4), chino (@Dominic) y español (@francov_). ¡Gracias a todos los traductores por correr la voz!
+
+Comparta sus traducciones en nuestra sala de chat [#translations](https://chat.decred.org/#/room/#translations:decred.org).
 ## Mercados
 
 En agosto, DCR cotizaba entre 126.50–181.26 USD/ BTC 0.0032–0.0038. La tarifa promedio diaria fue de $161.24.
