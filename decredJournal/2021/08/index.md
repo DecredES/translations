@@ -1,6 +1,6 @@
 # Revista Decred Agosto 2021
 
-- Politeia v1.1.0 se lanzó y se implementó en el sitio de propuestas se agregaron nuevas funciones incluidos metadatos expandidos y una interfaz de usuario mejorada.
+- Politeia v1.1.0 se lanzó y se implementó en el sitio de propuestas donde se agregaron nuevas funciones incluidos metadatos expandidos y una interfaz de usuario mejorada.
 - El precio del ticket finalmente estableció un nuevo máximo histórico de 321, el cual superó los picos en la historia de Decred, despejando el camino para referirse a los nuevos precios de tickets ATH sin ninguna calificación sobre los picos tempranos en el precio.
 - Progreso sólido en una variedad de repositorios de software de Decred incluyendo el progreso en 3 DCP diferentes (7, 8 y 9) y para el DCRDEX los contratos en Solidity para el comercio de ETH se está llevando revisión en testnet.
 
