@@ -165,7 +165,11 @@ En agosto, DCR cotizaba entre 126.50–181.26 USD/ BTC 0.0032–0.0038. La tarif
 
 dcrdata ahora [muestra](https://twitter.com/longtermdaily/status/1433148588608004097) el historial de [precios](https://explorer.dcrdata.org/market?chart=candlestick&xc=dcrdex&bin=1d) y [volumen](https://explorer.dcrdata.org/market?chart=volume&xc=dcrdex&bin=1d) de operaciones para el par BTC / DCR en DCRDEX.
 
+![decredMarket](./assets/decred_market.png)
+
 Un nuevo colaborador misterioso @tacorevenge publicó la [primera parte](https://medium.com/@tacorevenge/the-suppressor-part-1-war-of-attrition-3081a61b202b) de una investigación de la entidad The Suppressor que algunos miembros de la comunidad sospechan de manipulación de los mercados de DCR.
+
+![grafica](./assets/odd_high.png)
 
 ## Noticias Relevantes
 
