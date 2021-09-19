@@ -109,6 +109,72 @@ Orientado al usuario:
 - Permitir a los clientes [cancelar](https://github.com/decred/dcrdex/pull/1133) pedidos mientras un mercado este suspendido.
 - Se corrigió problemas de [desplazamiento](https://github.com/decred/dcrdex/pull/1142).
 
+Interno:
+
+- Se utilizaron [filtros compactos](https://github.com/decred/dcrdex/pull/954) en el cliente para localizar los reembolsos de contratos de contraparte en lugar de tirar bloques para verificar.
+- No a la difusión de intercambios si hay algún problema para generar o firmar el [reembolso tx](https://github.com/decred/dcrdex/pull/1166).
+- Soporte inicial de [internacionalización](https://github.com/decred/dcrdex/pull/1051) en el cliente (en código Go, HTML y JS).
+- Comprobación automático si es necesario volver a generar las plantillas [localizadas](https://github.com/decred/dcrdex/pull/1167).
+- Se corrigieron algunos [detenimientos](https://github.com/decred/dcrdex/pull/1150) de apagado.
+- [Pruebas de reorganización](https://github.com/decred/dcrdex/pull/669) arregladas y mejoradas.
+
+Soporte en Ethereum:
+
+- versión inicial del [smart contract](https://github.com/decred/dcrdex/pull/1019) en Solidity para intercambios de ETH. Como dice el [README](https://github.com/decred/dcrdex/tree/a7046c670b4f824b7b5e237c9efcecbd8fc5e604/dex/networks/eth/contracts) aún no está probado y no es seguro para su uso en la red principal y está destinado a ser una [prueba del concepto](https://en.wikipedia.org/wiki/Proof_of_concept#Software_development) de los intercambios de ETH. Este RP generó mucho conocimiento sobre Ethereum y la seguridad de los contratos y trajo consigo pruebas de [código](https://github.com/decred/dcrdex/blob/a7046c670b4f824b7b5e237c9efcecbd8fc5e604/client/asset/eth/rpcclient_harness_test.go#L706) para detectar la vulnerabilidad de un ataque de reentrada.
+- aproximación adicional del [costo del gas](https://github.com/decred/dcrdex/pull/1157) de intercambio.
+
+La mayoría de estos cambios apuntan al [hito de la v0.3](https://github.com/decred/dcrdex/milestone/12) pero algunos se respaldaron en la rama de la versión [v0.2.x](https://github.com/decred/dcrdex/commits/release-v0.2).
+
+Echa un vistazo al [episodio 42](https://www.youtube.com/watch?v=dRjAalxS3r8) de Decred in Depth donde @chappjc respondió preguntas de la comunidad sobre DCRDEX y cómo trabajar como desarrollador en Decred.
+
+### [dcrandroid](https://github.com/planetdecred/dcrandroid)
+
+Combinado en la biblioteca [dcrlibwallet](https://github.com/planetdecred/dcrlibwallet) (compartida por dcrandroid, dcrios y godcr):
+
+- Soporte en votaciones en [Politeia](https://github.com/planetdecred/dcrlibwallet/pull/202).
+- Un filtro para buscar tickets [sin minar](https://github.com/planetdecred/dcrlibwallet/pull/205) (aquellos sin confirmaciones).
+- Función para obtener tiempo hasta el próximo cambio de [precio del ticket](https://github.com/planetdecred/dcrlibwallet/pull/204).
+
+Fusionado en dcrandroid:
+
+- Implementación del [modo oscuro](https://github.com/planetdecred/dcrandroid/pulls?q=is%3Apr+dark+merged%3A2021-08-01..2021-08-31+sort%3Aupdated-asc).
+- Se agrego diálogo entre [detalles](https://github.com/planetdecred/dcrandroid/pull/573) de transacción para tickets.
+- Actualización de traducción en [Francés](https://github.com/planetdecred/dcrandroid/pull/576).
+- [Actualización](https://github.com/planetdecred/dcrandroid/pull/571) entre dependencias y migración al estilo de código Kotlin.
+- Se corrigió la [vulnerabilidad](https://github.com/planetdecred/dcrandroid/pull/581) "StrandHogg" (donde las aplicaciones maliciosas pueden secuestrar las tareas de Android).
+
+![privacy](./assets/privacy.png)
+
+### [dcrios](https://github.com/planetdecred/dcrios)
+
+- Objetivo de implementación mínimo cambiado a [iOS 12](https://github.com/planetdecred/dcrios/pull/816).
+- ~ 2 correcciones de errores.
+
+### [godcr](https://github.com/planetdecred/godcr)
+
+- Implementación para la votación en [Politeia](https://github.com/planetdecred/godcr/pull/542)
+- Visualización informativa de listas de [transacciones](https://github.com/planetdecred/godcr/pull/582) y detalles.
+- [Notificaciones](https://github.com/planetdecred/godcr/pull/518) de escritorio agregadas cuando se detecta una nueva transacción o propuesta entrante.
+- Nuevo sistema para [notificaciones](https://github.com/planetdecred/godcr/pull/540) dentro de la aplicación (brindis) y del sistema operativo.
+- Se muestra el tiempo hasta el próximo cambio de [precio del ticket](https://github.com/planetdecred/godcr/pull/565).
+- Notificaciones personalizadas para [Stake tx](https://github.com/planetdecred/godcr/pull/560).
+- Implementación de la navegación hacia [atrás](https://github.com/planetdecred/godcr/pull/557).
+- Se agregó información sobre herramientas [flotantes](https://github.com/planetdecred/godcr/pull/488) para los datos del ticket.
+- Se introdujo [LinearLayout](https://github.com/planetdecred/godcr/pull/563) para simplificar el código de diseño.
+- Refactorización y limpieza de código.
+- ~ 20 correcciones de errores.
+
+![mixed](./assets/mixed.png)
+
+### [dcrdata](https://github.com/decred/dcrdata)
+
+- Migración hacia la nueva [API de Politeia](https://github.com/decred/dcrdata/pull/1829).
+- Actualizaciones de dependencia y refactorización en preparación para lanzar la rama v6.0.
+
+Otro:
+
+- El programa Bug Bounty publicó una [actualización](https://bounty.decred.org/2021/08/status-update/): se han parcheado 2 vulnerabilidades y se han hecho públicas, sus autores se han agregado al [Salón de la Fama](https://bounty.decred.org/#hall_of_fame).
+
 ## Comunidad
 
 Felicitaciones a los nuevos contratistas a quienes se les otorgó la Autorización de Contratista Decred (DCC): [¡@vibros68!](https://github.com/vibros68)
