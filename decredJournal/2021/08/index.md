@@ -18,6 +18,96 @@ Contenido:
 - Sobre está edición
 
 # Desarrollo
+El trabajo que se informa a continuación tiene el estado "fusionado con el maestro" al menos que se indique lo contrario. Significa que el trabajo se completa, se revisa e integra en el código fuente para que los usuarios avanzados puedan [crear y ejecutar](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c) pero aún no está disponible en la versión de binarios para los usuarios habituales.
+
+### [dcrd](https://github.com/decred/dcrd)
+
+[Se ha fusionado](https://github.com/decred/dcrd/pull/2680) la implementación del cambio de consenso de la [Política de Revertir Gastos de la Tesorería](https://github.com/decred/dcps/blob/master/dcp-0007/dcp-0007.mediawiki) (DCP-7) (después de algunos [preparativos](https://github.com/decred/dcrd/pull/2679) para facilitar la revisión). Si se aprueba la votación, el límite de gasto se basará en los ingresos históricos de la tesorería y no en sus gastos históricos lo que a su vez desbloquea la capacidad de utilizar la nueva tesorería descentralizada.
+
+Trabajo fusionado hacia el cambio de consenso sobre las [Revocaciones Automáticas de tickets](https://github.com/decred/dcps/blob/master/dcp-0009/dcp-0009.mediawiki) (DCP-9):
+
+- Se agregó un método para obtener todos los tickets que [vencerán](https://github.com/decred/dcrd/pull/2701) en el siguiente bloque.
+- Voto unificado y [validación](https://github.com/decred/dcrd/pull/2702) de revocación.
+- Se agregó una función para crear tx de [revocación](https://github.com/decred/dcrd/pull/2707) para un cualquier ticket dado.
+
+Otro trabajo fusionado:
+
+- [Definiciones](https://github.com/decred/dcrd/pull/2713) para el cambio de consenso en [Actualizaciones de Versión Explícita](https://github.com/decred/dcps/blob/master/dcp-0008/dcp-0008.mediawiki) (DCP-8).
+- Valores matemáticos [precalculados](https://github.com/decred/dcrd/pull/2690) con optimización para una verificación de firmas ~ 10% más rápida y ~ 400 KiB binario `dcrd` más pequeño.
+- [Conversión NAF](https://github.com/decred/dcrd/pull/2695) reescrita para evitar la acumulación de todas las asignaciones y cambiar a un algoritmo más rápido eliminando otro ~ 1% del tiempo de verificación de la firma.
+- Métodos agregados para crear y restaurar [snapshots](https://github.com/decred/dcrd/pull/2715) de salidas de coinbase que se puedan gastar (se permitirá pruebas más eficientes).
+- Opción de configuración agregada para el [tamaño máximo](https://github.com/decred/dcrd/pull/2711) del archivo de registro antes de rotarlo y comprimirlo.
+
+### [dcrwallet](https://github.com/decred/dcrwallet)
+
+- Se agregó compatibilidad con VSP y mezcla para la solicitud JSON-RPC del [`purchaseticket`](https://github.com/decred/dcrwallet/pull/2064).
+- Se agregó el [`processunmanagedticket`](https://github.com/decred/dcrwallet/pull/2075) JSON-RPC del ticket no administrado para asignar un ticket ya existente al VSP en el archivo de configuración del usuario.
+- Se agregó el [almacenamiento](https://github.com/decred/dcrwallet/pull/2068) del host VSP y la clave pública para cada ticket en la base de datos de la billetera (esto permite una verificación más eficiente del estado de la tarifa del ticket).
+- Se corrigió la [observación](https://github.com/decred/dcrwallet/pull/2076) de direcciones duplicadas (estaba bloqueando el procesamiento de bloques en billeteras muy utilizadas).
+- Se corrigieron algunos [detenimientos](https://github.com/decred/dcrwallet/pull/2081) al bloquear o cerrar la billetera.
+- Manejo de [reorganización fijo](https://github.com/decred/dcrwallet/pull/2084) y mejorado en modo de sincronización SPV.
+
+### [Decrediton](https://github.com/decred/decrediton)
+
+- Se agregó un botón para [revocar](https://github.com/decred/decrediton/pull/3506) tickets en modo SPV.
+- Se reemplazó la configuración del límite de espacio con la acción del [Descubrir Uso de Dirección](https://github.com/decred/decrediton/pull/3532) de una sola vez (que tiene su propio límite de espacio).
+- Nuevo diseño de la interfaz de usuario para las páginas [LN Send](https://github.com/decred/decrediton/pull/3538) y [LN Receive](https://github.com/decred/decrediton/pull/3537)
+
+![LN_decrediton](./assets/LN_decrediton.png)
+
+### [Politeia](https://github.com/decred/politeia)
+
+Politeia v1.1.0 se ha lanzado e implementado en [proposals.decred.org](https://proposals.decred.org/). Aspectos destacados de la versión:
+
+- Los autores de las propuestas ahora deben completar el monto de la financiación, las fechas de inicio y finalización y el dominio cuando lo suban a la plataforma (propuestas recientes como [esta](https://proposals.decred.org/record/58d9f46) muestran estos nuevos datos en la parte superior).
+- Se [combinaron](https://github.com/decred/politeiagui/pull/2431) las pestañas en `In Discussion`  y `Voting` en una pestaña en `Under Review` para ayudar a los usuarios a ver rápidamente si se están votando en alguna propuesta.
+- Se puede ver el Markdown sin procesar.
+- Se puede ver quién censuró la propuesta y la razón por lo que lo hizo.
+- Muchas correcciones y mejoras de UI / UX
+- Las notificaciones por correo electrónico ahora tienen una tasa limitada para evitar que los usuarios malintencionados activen demasiadas y hagan que Politeia sea marcado como un servidor de correo no deseado.
+- La base de datos de usuario se movió a MySQL para eliminar CockroachDB como dependencia y tener solo una instancia de base de datos para administrar.
+
+Para obtener más detalles puedes consultar las notas de la versión en los repositorios [politeia](https://github.com/decred/politeia/releases/tag/v1.1.0) y [politeiagui](https://github.com/decred/politeiagui/releases/tag/v1.1.0).
+
+Cambios orientados al usuario fusionados en el maestro (publicación v1.1.0):
+
+- Se permite al usuario [comparar](https://github.com/decred/politeiagui/pull/2524) dos versiones de propuestas.
+- Se puede resaltar comentarios de [votos](https://github.com/decred/politeiagui/pull/2520) inmediatamente pero mostrará un error si la solicitud del servidor falla.
+- ~ 7 correcciones de errores
+
+![2](./assets/politeia_proposal_differ.png)
+
+Cambios en el backend, internos y en la línea de comandos (publicación v1.1.0):
+
+- Verificación de la [contraseña](https://github.com/decred/politeia/pull/1490) antes de costosas operaciones de billetera en el comando de votación `politeiavoter`.
+- Valores de [monedas](https://github.com/decred/politeia/pull/1488) legibles por humanos en la salida de la herramienta `pictl` (por ejemplo, al enviar nuevas propuestas con ella).
+- Protección CSRF agregada a la ruta de [inicio de sesión](https://github.com/decred/politeia/pull/1481).
+- Estados de [facturación agregados](https://github.com/decred/politeia/pull/1480) (Activo, Cerrado, Completado) para marcar si se puede facturar o no una propuesta aprobada.
+- Requerimiento en los campos de [extra data](https://github.com/decred/politeia/pull/1487) estén firmados al publicar o editar `comentarios`, y solo permitir esos datos si están configurados en el complemento de `comments` (el propósito de estos campos es ampliar el complemento de comentarios con una nueva funcionalidad).
+- Se permite que los autores de propuestas publiquen [actualizaciones](https://github.com/decred/politeia/pull/1491) sobre las propuestas aprobadas. Cada actualización inicia un nuevo hilo de comentarios donde los usuarios pueden responder y votar, hasta que un administrador marca la propuesta como Completada o Cerrada.
+- Mayor cobertura de prueba.
+
+### [vspd](https://github.com/decred/vspd)
+
+- Mejoras en el manejo de [señales](https://github.com/decred/vspd/pull/293) portado de otros proyectos.
+- Reparaciones y mantenimientos más pequeños.
+
+### [dcrlnd](https://github.com/decred/dcrlnd)
+
+- Actualización a la [última](https://github.com/decred/dcrlnd/pull/138) dcrd y dcrwallet.
+- Se agregó un [script](https://github.com/decred/dcrlnd/pull/139) para generar una red de simulación para testing.
+- Se agregó [compatibilidad con SPV](https://github.com/decred/dcrlnd/pull/140) en el modo de billetera integrada (el modo de billetera integrado + el modo SPV combinado permiten ejecutar dcrlnd sin dcrd y dcrwallet).
+
+### [DCRDEX](https://github.com/decred/dcrdex)
+
+Orientado al usuario:
+
+- Revisón del sistema de [credenciales](https://github.com/decred/dcrdex/pull/1015) de cliente. Las claves privadas para cada nueva cuenta DEX ahora se derivan de una única semilla de aplicación y la clave pública del servidor. Además, la contraseña de la aplicación única que se utiliza para cifrar los datos confidenciales del usuario se reemplaza por un par de claves donde la clave "interna" se cifra con la clave "externa". Esto elimina la necesidad de volver a cifrar todos los datos protegidos cuando se cambie la contraseña (y la clave externa).
+- Se agregó un punto final para devolver la [app seed](https://github.com/decred/dcrdex/pull/1149) si se proporciona la contraseña de la app correcta.
+- Se agregó una casilla de verificación para [recordar la contraseña](https://github.com/decred/dcrdex/pull/1119) durante la duración de la sesión.
+- Informar al usuario de los mercados disponibles y los tamaños de los lotes antes de que se pague la tarifa de [registro](https://github.com/decred/dcrdex/pull/1135).
+- Permitir a los clientes [cancelar](https://github.com/decred/dcrdex/pull/1133) pedidos mientras un mercado este suspendido.
+- Se corrigió problemas de [desplazamiento](https://github.com/decred/dcrdex/pull/1142).
 
 ## Comunidad
 
