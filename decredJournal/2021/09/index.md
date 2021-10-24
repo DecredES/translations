@@ -163,10 +163,14 @@ Se aseguro el siguiente artículo de noticias:
 
 Comparta sus traducciones en nuestra sala de chat [#translations](https://chat.decred.org/#/room/#translations:decred.org).
 
+![bufalo](./assets/bufalo.jpeg)
+
 **Mercados**
 --------
 
 En septiembre, DCR cotizaba entre 96.14--185.79 USD/ BTC 0.0023--0.0038. La tarifa promedio diaria fue de $139.56.
+
+![mercado](./assets/exchange.png)
 
 **Noticias Relevantes**
 -----------------------
