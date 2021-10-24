@@ -26,7 +26,7 @@ Contenido:
 
 - Mercados
 
-- Noticias Relevante
+- Noticias Relevantes
 
 
 ## Desarrollo
@@ -70,7 +70,7 @@ Distribución del hashrate [reportada](https://miningpoolstats.stream/decred) 
 -   Poolin 36%
 -   F2Pool 25%
 -   AntPool 22%
--   [BTC.com](http://BTC.com) 5%
+-   BTC.com 5%
 -   ViaBTC 5%
 -   Luxor 3%
 -   HuobiPool 1%
