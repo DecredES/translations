@@ -26,7 +26,7 @@ Contenido:
 
 - Mercados
 
-- Relevante Externo
+- Noticias Relevante
 
 
 ## Desarrollo
