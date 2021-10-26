@@ -29,7 +29,72 @@ Contenido:
 - Noticias Relevantes
 
 
-## Desarrollo
+**Desarrollo**
+--------------
+
+El trabajo que se informa a continuación tiene el estado "fusionado con el maestro" al menos que se indique lo contrario. Significa que el trabajo se completa, se revisa e integra en el código fuente para que los usuarios avanzados puedan [crear y ejecutar](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c) pero aún no está disponible en la versión de binarios para los usuarios habituales.
+
+### [dcrd](https://github.com/decred/dcrd)
+
+*dcrd es una implementación de nodo completo que impulsa la red peer-to-peer de Decred en todo el mundo.*
+
+Cambio de consenso de actualizaciones de versión explícita ([DCP-8](https://github.com/decred/dcps/blob/master/dcp-0008/dcp-0008.mediawiki)):
+
+-   Se han [implementado](https://github.com/decred/dcrd/pull/2716) nuevas reglas de consenso. Una vez activadas, las transacciones desconocidas y las versiones de script se rechazarán hasta que se hayan habilitado explícitamente mediante otro cambio de consenso. Las monedas que se podían gastar antes de la activación seguirán siendo gastables. Este cambio proporcionará una mayor seguridad en la red y permitirá a los desarrolladores escribir más código a prueba de errores, cómo se explica en los comentarios de la [propuesta](https://proposals.decred.org/record/3a98861) [DCP-8](https://github.com/decred/dcps/blob/master/dcp-0008/dcp-0008.mediawiki) y una [discusión](https://github.com/decred/dcrd/pull/2719#issuecomment-909535320) reciente de los desarrolladores.
+-   @davecgh publicó una [propuesta de actualización](https://proposals.decred.org/record/3a98861/comments/21) del trabajo completo del desarrollo de dcrd.
+
+Cambio de consenso de revocaciones automáticas de los tickets ([DCP-9](https://github.com/decred/dcps/blob/master/dcp-0009/dcp-0009.mediawiki)):
+
+-   [Preparativos](https://github.com/decred/dcrd/pull/2718): pruebas añadidas, definiciones de agenda añadidas, código reorganizado para adaptarse a los próximos cambios. Se introdujo una nueva prioridad de transacción para garantizar que siempre se creen revocaciones automáticas. La lista completa de prioridades se convierte en: votos (más alto)> revocaciones automáticas> tickets> transacciones regulares y revocaciones (más bajo).
+-   [Implementación](https://github.com/decred/dcrd/pull/2720) en el cambio de consenso real. Una vez activados, se requerirá que los bloques contengan revocaciones para todos los tickets que se perdieron o caducaron a partir de ese bloque. Las nuevas reglas también permitirán desbloquear algunos [~ 200 mil DCR](https://github.com/decredcommunity/proposals/blob/master/proposals/e2d7b7d/docs/unrevoked-missed-tickets.md) que se atascaron en tickets perdidos no revocados.
+-   @rstaudt2 publicó una [actualización de la propuesta](https://proposals.decred.org/record/e2d7b7d/comments/19) del trabajo completo de desarrollo de dcrd.
+
+Otro trabajo fusionado:
+
+-   Se implementó la [poda](https://github.com/decred/dcrd/pull/2641) del diario de gastos que retrasaba la eliminación de los tickets que se usaban hasta su máximo de uso (esto es necesario para la [indexación asincrónica](https://github.com/decred/dcrd/issues/1470) que acelerará la validación de bloques).
+-   Se agregó más pruebas para el administrador de direcciones y el [desacopló](https://github.com/decred/dcrd/pull/2596) del paquete de cables, en preparación para los próximos cambios en el protocolo de cables.
+-   Se ancló imágenes de [Docker](https://github.com/decred/dcrd/pull/2735) y [Acciones de GitHub](https://github.com/decred/dcrd/pull/2736) con hash en lugar de etiquetas para una mejor seguridad para la cadena de suministro.
+-   Se modificó la compatibilidad con [Docker](https://github.com/decred/dcrd/pull/2740) para proporcionar una imagen con un fuerte enfoque en la seguridad. Solo incluye binarios específicos de Decred ("distroless") y los ejecuta como un usuario sin privilegios. La nueva imagen final es de alrededor de 10 MB, en comparación con ~ 1 GB de la versión anterior.
+-   Código actualizado para usar las funciones de [Go 1.16](https://github.com/decred/dcrd/pull/2722).
+-   Actualización del los módulos del gráfico de [jerarquía](https://github.com/decred/dcrd/pull/2744).
+
+> Se está preparando un gran lanzamiento de dcrd ... que incluye 3 votos de consenso, sincronización de un 30% más rápida y mucho más. ([@rstaudt2](https://twitter.com/rstaudt2/status/1443668800679858181))
+
+### [dcrwallet](https://github.com/decred/dcrwallet)
+
+*dcrwallet es un servidor de billetera utilizado por aplicaciones de billetera gráfica y líneas de comandos.*
+
+-   Se permite el procesamiento de [tarifas de VSP](https://github.com/decred/dcrwallet/pull/2058) para tickets comprados cuando el comprador de tickets (ticketbuyer) se encuentre apagado.
+
+-   Se cambió el [límite](https://github.com/decred/dcrwallet/pull/2086) predeterminado de `ticketbuyer` a 1 ticket máximo por bloque.
+
+-   Se permite [inhabilitar](https://github.com/decred/dcrwallet/pull/2088) el descubrimiento de cuentas (permitiendo optimizar los clientes que no lo necesitan, como dcrlnd).
+
+-   Opción de configuración agergada para el [tamaño máximo](https://github.com/decred/dcrwallet/pull/2077) de registro antes de que se cambié.
+
+-   Código [Go 1.16](https://github.com/decred/dcrwallet/pull/2085) actualizado junto con los últimos módulos de [dcrd](https://github.com/decred/dcrwallet/pull/2087).
+
+-   Se corrigieron algunos problemas con el procesamiento y la confirmación de los [pagos de tarifas](https://github.com/decred/dcrwallet/pull/2083) para los tickets administrados por VSP.
+
+-   Se puede [calcular la tarifa](https://github.com/decred/dcrwallet/pull/2057) fija para transacciones multifirma.
+
+-   Se corrigió un posible issue de [carrera](https://github.com/decred/dcrwallet/pull/2089) en el modo SPV.
+
+### [Decrediton](https://github.com/decred/decrediton)
+
+*Decrediton es una aplicación de billetera para escritorio con todas las funciones que cuentan con votación integrada, mezcla de StakeShuffle, Lightning Network, comercio DEX y más. Funciona con o sin una blockchain completa (modo SPV).*
+
+-   Se implementó un nuevo diseño de interfaz de usuario para la pestaña de los [Canales LN](https://github.com/decred/decrediton/pull/3543).
+-   Se actualizó todas las frases [contraseñas](https://github.com/decred/decrediton/pull/3546) de las cuentas en el cambio de frase de contraseña privada.
+-   Se corrigieron algunos problemas con la sincronización del [estado de pago](https://github.com/decred/decrediton/pull/3545) de la tarifa de VSP.
+-   Se corrigieron 3 errores cuando se [crea](https://github.com/decred/decrediton/pull/3554) una billetera.
+-   Se corrigieron los [errores](https://github.com/decred/decrediton/pull/3561) de VSP heredados que se muestran en el nuevo modo VSP.
+-   Enlaces de [navegación](https://github.com/decred/decrediton/pull/3558) faltantes arreglados.
+-   Se corrigió el [desenfoque](https://github.com/decred/decrediton/pull/3555) al restaurar una billetera Trezor.
+-   Se arregló los [bloqueos](https://github.com/decred/decrediton/pull/3548) fijos causados por el procesamiento de transacciones muy grandes.
+-   Se [cambió](https://github.com/decred/decrediton/pull/3553) los enviós fijos mixtos cuando estos se llevan a cabo en una dirección incorrecta.
+
+![LN](./assets/LN.png)
 
 ## Comunidad
 
