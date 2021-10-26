@@ -170,6 +170,27 @@ Orientado al usuario:
 ![adn](./assets/ADN.png)
 
 
+Cambios internos y de backend:
+
+-   Infraestructura agregada para pagar la tarifa de registro en [activos](https://github.com/decred/dcrdex/pull/1202) que no sean DCR, tarifas de registro implementadas en BTC.
+-   Refactorización para la preparación del soporte de [Bitcoin SPV](https://github.com/decred/dcrdex/pull/1089).
+-   [Limitación de velocidad](https://github.com/decred/dcrdex/pull/1192) más detallada para proteger contra ataques a la red.
+-   Cuenta de [restauración](https://github.com/decred/dcrdex/pull/1183) optimizada desde semilla.
+-   Simplificación sobre el procedimiento de cambio de [tamaño de lote](https://github.com/decred/dcrdex/pull/1212) (la cantidad mínima de trade).
+-   Se puede descubrir cuentas [antes](https://github.com/decred/dcrdex/pull/1201) en el flujo (para soportar tarifas de activos múltiples).
+-   Verificación simplificada de la [propiedad](https://github.com/decred/dcrdex/pull/1193) de la billetera al cambiar la configuración de la billetera.
+-   Aplicación de línea de comandos de [`usermatches`](https://github.com/decred/dcrdex/pull/1213) agregada para recuperar datos de coincidencias y guardarlos como CSV.
+
+Trabajar hacia la internacionalización:
+
+-   Se [agregó](https://github.com/decred/dcrdex/pull/1127) soporte de traducción a la interfaz de usuario del cliente web.
+-   Sistema mejorado para traducir [notificaciones](https://github.com/decred/dcrdex/pull/1197).
+-   Se agregó un interruptor `dexc` para volver a traducir las plantillas sobre la marcha (permite una iteración más rápida).
+-   Se añadió traducciones al [portugués](https://github.com/decred/dcrdex/pull/1185) y [chino](https://github.com/decred/dcrdex/pull/1207).
+
+![chino](./assets/chino.png)
+
+
 ## Comunidad
 
 ¡Bienvenido al nuevo contribuyente con código fusionado en la rama master: @naveensrinivasan ([dcrd)](https://github.com/decred/dcrd/commits?author=naveensrinivasan)!
