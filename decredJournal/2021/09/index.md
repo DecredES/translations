@@ -190,6 +190,110 @@ Trabajar hacia la internacionalización:
 
 ![chino](./assets/chino.png)
 
+Cambios internos hacia el soporte de Ethereum:
+
+-   Se agregó una herramienta para [verificar](https://github.com/decred/dcrdex/pull/1203) el contract de intercambio implementado en la red de Ethereum (se puede usar para detectar un cambio inesperado del contract).
+-   Decodificación y validación agregadas de [transacciones](https://github.com/decred/dcrdex/pull/1215) mientras están en el mempool (permite fallar rápidamente antes de que se extraiga un tx mal formado).
+-   Estimación implementada del [pedido máximo](https://github.com/decred/dcrdex/pull/1184) que se puede colocar en la billetera
+
+### [Decred Wallet (Android)](https://github.com/planetdecred/dcrandroid)
+
+¡Decred Wallet v1.6.1 ha sido lanzado en [Google Play Store](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet)!
+
+Los usuarios con mentalidad de privacidad ahora también pueden obtener el APK firmado directamente desde la [versión de GitHub](https://github.com/planetdecred/dcrandroid/releases/tag/v1.6.1).
+
+Fusionado en septiembre:
+
+-   Opción de configuración agregada para elegir el [tema](https://github.com/planetdecred/dcrandroid/pull/582) de la aplicación.
+-   Se permite intentos de desbloqueo de billetera con una frase de contraseña [vacía](https://github.com/planetdecred/dcrandroid/pull/585).
+
+Combinación de la biblioteca [dcrlibwallet](https://github.com/planetdecred/dcrlibwallet) (compartida por las carteras de Android / iOS y GoDCR):
+
+-   Se agregaron varias consultas de datos para admitir la descripción general del [staking](https://github.com/planetdecred/dcrlibwallet/pull/206) de múltiples billeteras.
+
+Consulta la nueva [propuesta](https://proposals.decred.org/record/6db3c4e) de las billeteras móviles para conocer la hoja de ruta de desarrollo para 2021--2022.
+
+### [Decred Wallet (iOS)](https://github.com/planetdecred/dcrios)
+
+¡Decred Wallet v1.6.1 ha sido lanzado en [App Store](https://apps.apple.com/us/app/decred-wallet/id1462247643)!
+
+Fusionado en septiembre:
+
+-   Implementación del [modo oscuro](https://github.com/planetdecred/dcrios/pull/812).
+-   [Notificación](https://github.com/planetdecred/dcrios/pull/853) para los usuarios en donde sus cuentas no se pueden eliminar una vez creadas.
+-   Se permite intentos de desbloqueo de billetera con una frase de contraseña [vacía](https://github.com/planetdecred/dcrios/pull/827).
+-   ~ 5 correcciones de errores y ~ 2 ajustes de UI.
+
+![wallet](./assets/wallet.png)
+
+### [GoDCR](https://github.com/planetdecred/godcr)
+
+*GoDCR es una aplicación de billetera para escritorio liviana con staking integrado, privacidad y navegación en Politeia.*
+
+¡La primera compilación de testnet está [disponible](https://twitter.com/planetdecred/status/1441164793470087187) para vista previa! Descárguelo de la [versión de GitHub](https://github.com/planetdecred/godcr/releases) y verifique las firmas. Si planea buscar errores, se recomienda compilar a partir de la última [fuente](https://github.com/planetdecred/godcr) para tener todas las correcciones de errores recientes.
+
+Se fusionaron los cambios orientados al usuario:
+
+-   División de la restauración de las frases semillas en [pasos](https://github.com/planetdecred/godcr/pull/587).
+-   Se agregó el enlace "[Modo avanzado](https://github.com/planetdecred/godcr/pull/614)" a la página Enviar que permite seleccionar manualmente las monedas para gastar en la transacción (esta característica de privacidad también se [conoce](https://en.bitcoin.it/wiki/Privacy#Coin_control) como "[control de monedas](https://bitcoin.design/guide/payments/send/coin-selection/#manual-coin-selection-aka-coin-control) (coin control)".
+-   Se agregaron efectos de [desplazamiento](https://github.com/planetdecred/godcr/pull/586) a numerosos [widgets](https://github.com/planetdecred/godcr/pull/624).
+-   Se muestra el progreso de la [reexploración](https://github.com/planetdecred/godcr/pull/629) en la descripción general.
+-   UX mejorada para [crear](https://github.com/planetdecred/godcr/pull/622) billeteras y cuentas.
+-   Se permite el cierre de menús [desplegables](https://github.com/planetdecred/godcr/pull/616) haciendo clic fuera.
+-   Representación mejorada de [tablas](https://github.com/planetdecred/godcr/pull/529) de Markdown.
+-   Búsqueda y visualización de [tickets](https://github.com/planetdecred/godcr/pull/567) refactorizados.
+-   UX optimizado de los [modales](https://github.com/planetdecred/godcr/pull/626) de selección de idioma y moneda.
+-   Se añadió traducción al [español](https://github.com/planetdecred/godcr/pull/521).
+-   Se corrigieron los iconos [borrosos](https://github.com/planetdecred/godcr/pull/618) en resoluciones más altas.
+-   ~ 7 otros ajustes de UX y ~ 17 correcciones de errores
+
+Cambios internos y del desarrollador:
+
+-   Edificio fijo en [FreeBSD](https://github.com/planetdecred/godcr/pull/627).
+-   [Makefile](https://github.com/planetdecred/godcr/pull/628) agregado para administrar las compilaciones del sistema operativo construido.
+-   Activos [incrustados](https://github.com/planetdecred/godcr/pull/620) en el binario de la aplicación.
+
+![2511](./assets/2511.png)
+
+En progreso:
+
+-   Integración en el [DEX](https://github.com/planetdecred/godcr/pull/637) (basada en el [soporte](https://github.com/planetdecred/dcrlibwallet/pull/210) base en dcrlibwallet).
+
+Consulta la segunda [propuesta de GoDCR](https://proposals.decred.org/record/f7d9fc8) para obtener una actualización de estado y la hoja de ruta 2021-2022.
+
+### [dcrdata](https://github.com/decred/dcrdata)
+
+*dcrdata es un explorador blockchain de Decred y datos fuera de la cadena como propuestas, mercados y más de Politeia.*
+
+Cambios de interfaz de usuario:
+
+-   Se implementó el gráfico de [velas](https://github.com/decred/dcrdata/pull/1854) DCRDEX en la página del [mercado](https://explorer.dcrdata.org/market?chart=candlestick&xc=dcrdex&bin=1d).
+-   Se muestra las [versiones](https://github.com/decred/dcrdata/pull/1863) de la transacción y del script en la página tx.
+-   Soporte agregado para el [tipo de dirección](https://devdocs.decred.org/developer-guides/addresses/) [Pay-to-Pubkey](https://github.com/decred/dcrdata/pull/1871) (P2PK).
+-   [Notificaciones](https://github.com/decred/dcrdata/pull/1866) de escritorio restauradas.
+-   Se agregaron [metaetiquetas de SEO](https://github.com/decred/dcrdata/pull/1870) para obtener resultados de búsqueda más bonitos y vistas previas en las redes sociales.
+-   ~ 2 correcciones de errores.
+
+Cambios internos:
+
+-   Se cambió a una nueva implementación de [trylock](https://github.com/decred/dcrdata/pull/1868).
+-   Menor [dependencia](https://github.com/decred/dcrdata/pull/1855) de los paquetes RPC de dcrd.
+-   Quedo actualizado a la última versión de [dcrd](https://github.com/decred/dcrdata/pull/1849).
+-   Se eliminó la dependencia de [notify.js](https://github.com/decred/dcrdata/pull/1867) abandonada.
+
+Consejo: se puede acceder a la versión de desarrollo de vanguardia de dcrdata en [tip.dcrdata.org](http://tip.dcrdata.org/).
+
+### [dcrdevdocs](https://github.com/decred/dcrdevdocs)
+
+*dcrdevdocs es un código fuente para la [documentación para desarrolladores](https://devdocs.decred.org/) de Decred.*
+
+-   Se añadido [modo oscuro](https://github.com/decred/dcrdevdocs/pull/97) (por supuesto).
+-   HTML en [línea eliminado](https://github.com/decred/dcrdevdocs/pull/98) (ayuda a detectar enlaces rotos).
+-   [Versiones](https://github.com/decred/dcrdevdocs/pull/99) actualizadas de MkDocs y Python.
+
+Otro:
+
+-   El programa [Bug Bounty](https://bounty.decred.org/) obtuvo dos actualizaciones [de alcance](https://github.com/decred/dcrbounty/pull/83): reemplazó dcrstakepool con vspd, eliminó dcrdocs y se aclararon las reglas para atomicswap.
 
 ## Comunidad
 
