@@ -128,7 +128,7 @@ Cambios en el backend, internos y en la línea de comandos:
 -   Se implementó la reconstrucción de caché para el [inventario de registros](https://github.com/decred/politeia/pull/1520) cuando la verificación del sistema de archivos este habilitada con `--fsck`.
 -   Se agregó una opción para guardar la salida de los resultados de la votación de `pictl` como [CSV](https://github.com/decred/politeia/pull/1478).
 -   Se agregaron [tiempos](https://github.com/decred/politeia/pull/1505) de espera de lectura y escritura para los servidores `politeiad` y `politeiawww.`
--   Middleware refactorizado en servidores `[politeiad](<https://github.com/decred/politeia/pull/1507>)` y `[politeiawww](<https://github.com/decred/politeia/pull/1506>)` y límites de lectura agregados para solicitudes de clientes y mensajes WebSocket.
+-   Middleware refactorizado en servidores [`politeiad`](<https://github.com/decred/politeia/pull/1507>) y [`politeiawww`](<https://github.com/decred/politeia/pull/1506>) y límites de lectura agregados para solicitudes de clientes y mensajes WebSocket.
 -   Se agregaron [tamaños de página](https://github.com/decred/politeia/pull/1518) a las respuestas de la política.
 -   Documentación agregada: documentos [API exportados](https://github.com/decred/politeia/pull/1497), descripción general del sistema de [pluggin](https://github.com/decred/politeia/pull/1519) y escritura de [pruebas E2E](https://github.com/decred/politeiagui/pull/2591).
 -   Se solucionó una [fuga](https://github.com/decred/politeia/pull/1500) de memoria.
@@ -136,6 +136,39 @@ Cambios en el backend, internos y en la línea de comandos:
 -   Mayor cobertura de pruebas de IU de backend y de un extremo a otro.
 
 ![LD](./assets/LD.png)
+
+### [vspd](https://github.com/decred/vspd)
+
+*vspd es un servidor de software para ejecutar un proveedor de servicios de votación. Un VSP vota en nombre de sus usuarios las 24 horas del día, los 7 días de la semana y no puede robar fondos.*
+
+-   [Diagrama](https://github.com/decred/vspd/pull/296) de arquitectura agregado a la [Guía de implementación](https://github.com/decred/vspd/blob/master/docs/deployment.md).
+-   Manejo actualizado de los [errores](https://github.com/decred/vspd/pull/295) de dcrd.
+-   [Comparación](https://github.com/decred/vspd/pull/294) de valores más fiable en las pruebas.
+
+### [dcrpool](https://github.com/decred/dcrpool)
+
+*dcrpool es un software de servidor para ejecutar un grupo de minería.*
+
+-   Fue actualizado para usar las funciones de [Go 1.16](https://github.com/decred/dcrpool/pull/335).
+-   Manejo fijo de bloques que se [reordenaron](https://github.com/decred/dcrpool/pull/336) fuera de la cadena.
+
+### [dcrlnd](https://github.com/decred/dcrlnd)
+
+*dcrlnd es el software de nodo Lightning Network de Decred. LN permite transacciones instantáneas y de bajo costo.*
+
+-   Se agregó un interruptor para guardar [perfiles de memoria](https://github.com/decred/dcrlnd/pull/144).
+
+### [DCRDEX](https://github.com/decred/dcrdex)
+
+*DCRDEX es un exchange sin custodia para el trading sin confianza, impulsado por atomic swaps.*
+
+Orientado al usuario:
+
+-   Gráfico de [velas históricas](https://github.com/decred/dcrdex/pull/1208) añadido.
+-   Reconocimiento en el parámetro de configuración [`rpcconnect`](https://github.com/decred/dcrdex/pull/1206) Bitcoin.
+
+![adn](./assets/ADN.png)
+
 
 ## Comunidad
 
