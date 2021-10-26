@@ -96,6 +96,47 @@ Otro trabajo fusionado:
 
 ![LN](./assets/LN.png)
 
+### [Politeia](https://github.com/decred/politeia)
+
+*Politeia es el sistema de propuestas de Decred. Se utiliza para solicitar financiación a la tesorería de Decred.*
+
+¡Otra versión de función y corrección de errores ha [aterrizado](https://twitter.com/lukebp/status/1442540461244043264) en el sitio web de [Politeia](https://proposals.decred.org/)! Aspectos destacados de v1.2.0:
+
+-   Actualizaciones del autor de la propuesta para las que sean aprobadas.
+-   Comparar dos versiones de una propuesta.
+-   Botón para insertar imagenes.
+-   Actualizaciones optimistas de votos instantáneos para comentarios.
+-   Servidor: estado de facturación de la propuesta, para formalizar si la facturación está permitida o no.
+-   Servidor: estado de la propuesta unificada para simplificar los clientes.
+-   Servidor: mayor seguridad y estabilidad.
+
+Para obtener más detalles, consulte las notas de la versión en los repositorios [politeia](https://github.com/decred/politeia/releases/tag/v1.2.0) y [politeiagui](https://github.com/decred/politeiagui/releases/tag/v1.2.0).
+
+Los cambios orientados al usuario se fusionaron en septiembre:
+
+-   Nuevo [estado](https://github.com/decred/politeiagui/pull/2609) de propuesta integrado y capacidad de administrador para establecer el estado de facturación.
+-   UX mejorada de [incrustación de imágenes](https://github.com/decred/politeiagui/pull/2567).
+-   Muestre el modo de inicio de sesión cuando [expira](https://github.com/decred/politeiagui/pull/2541) la sesión del usuario.
+-   Se agregaron [metaetiquetas de SEO](https://github.com/decred/politeiagui/pull/2614) para mejorar la ubicación en los resultados de búsqueda y permitir vistas previas agradables en Twitter y Facebook.
+-   Diseño de [alternancia](https://github.com/decred/politeiagui/pull/2588) de modo oscuro actualizado.
+-   ~ 18 correcciones de errores de GUI y ~ 3 mejoras.
+
+Cambios en el backend, internos y en la línea de comandos:
+
+-   Se agregó un [estado de propuesta](https://github.com/decred/politeia/pull/1515) unificado que sirve como una fuente única para los metadatos de la propuesta de diferentes complementos, lo que elimina la complejidad de los clientes y también reduce la carga en el servidor. El nuevo estado se puede consultar con el comando `pictl proposummaries`.
+-   Se agregaron interfaces de alto nivel para las [comprobaciones del sistema de archivos](https://github.com/decred/politeia/pull/1512) para verificar la integridad de los datos y reconstruir las cachés al inicio. Las [implementaciones](https://github.com/decred/politeia/issues/1511) para componentes individuales se realizarán por separado.
+-   Se implementó la reconstrucción de caché para el [inventario de registros](https://github.com/decred/politeia/pull/1520) cuando la verificación del sistema de archivos este habilitada con `--fsck`.
+-   Se agregó una opción para guardar la salida de los resultados de la votación de `pictl` como [CSV](https://github.com/decred/politeia/pull/1478).
+-   Se agregaron [tiempos](https://github.com/decred/politeia/pull/1505) de espera de lectura y escritura para los servidores `politeiad` y `politeiawww.`
+-   Middleware refactorizado en servidores `[politeiad](<https://github.com/decred/politeia/pull/1507>)` y `[politeiawww](<https://github.com/decred/politeia/pull/1506>)` y límites de lectura agregados para solicitudes de clientes y mensajes WebSocket.
+-   Se agregaron [tamaños de página](https://github.com/decred/politeia/pull/1518) a las respuestas de la política.
+-   Documentación agregada: documentos [API exportados](https://github.com/decred/politeia/pull/1497), descripción general del sistema de [pluggin](https://github.com/decred/politeia/pull/1519) y escritura de [pruebas E2E](https://github.com/decred/politeiagui/pull/2591).
+-   Se solucionó una [fuga](https://github.com/decred/politeia/pull/1500) de memoria.
+-   ~ 4 otras correcciones de errores de backend.
+-   Mayor cobertura de pruebas de IU de backend y de un extremo a otro.
+
+![LD](./assets/LD.png)
+
 ## Comunidad
 
 ¡Bienvenido al nuevo contribuyente con código fusionado en la rama master: @naveensrinivasan ([dcrd)](https://github.com/decred/dcrd/commits?author=naveensrinivasan)!
