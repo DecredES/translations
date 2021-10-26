@@ -10,23 +10,23 @@ Lo más destacado de septiembre:
 
 Contenido:
 
-- Desarrollo
+- [Desarrollo](https://github.com/DecredES/translations/blob/master/decredJournal/2021/09/index.md#desarrollo)
 
-- Comunidad
+- [Comunidad](https://github.com/DecredES/translations/blob/master/decredJournal/2021/09/index.md#comunidad)
 
-- Gobernanza
+- [Gobernanza](https://github.com/DecredES/translations/blob/master/decredJournal/2021/09/index.md#gobernanza)
 
-- Red
+- [Red](https://github.com/DecredES/translations/blob/master/decredJournal/2021/09/index.md#red)
 
-- Ecosistema
+- [Ecosistema](https://github.com/DecredES/translations/blob/master/decredJournal/2021/09/index.md#ecosistema)
 
-- Alcance
+- [Alcance](https://github.com/DecredES/translations/blob/master/decredJournal/2021/09/index.md#alcance)
 
-- Medios
+- [Medios](https://github.com/DecredES/translations/blob/master/decredJournal/2021/09/index.md#medios)
 
-- Mercados
+- [Mercados](https://github.com/DecredES/translations/blob/master/decredJournal/2021/09/index.md#mercados)
 
-- Noticias Relevantes
+- [Noticias Relevantes](https://github.com/DecredES/translations/blob/master/decredJournal/2021/09/index.md#noticias-relevantes)
 
 
 **Desarrollo**
