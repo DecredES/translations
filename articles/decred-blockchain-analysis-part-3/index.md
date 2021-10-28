@@ -13,3 +13,13 @@ Las alturas de bloque que seleccioné son 485,000 (15 de septiembre del 2020) y 
 2) me dio una forma de rastrear la fuente de esos errores. Escribí esta aventura en un propio [mini-informe](https://www.blockcommons.red/publication/clustering-deep-dive/), probablemente solo sea de interés para las personas que quieran comprender el cluster y el tipo de problemas que conlleva.
 
 tl; dr aproximadamente el 1% de los tickets aún se están asignando a un clúster que no es real, se une a un operador de VSP y las direcciones de los usuarios de VSP. Todo lo demás parece muy sólido, al menos en la era de Politeia (más abajo).
+
+### ¿Quién está en el pool?
+
+Imagen
+
+Lo que nos interesa aquí es la *gente que compra* y vota con los tickets, pero lo más cerca que podemos llegar a eso es la entidad que controla un cluster de direcciones. Entonces, la primera pregunta que debe hacerse es ¿cuántas entidades diferentes hay en un pool de tickets?
+
+En el bloque 485,000 contó con 22,239 entidades distintas; sin embargo la mayoría (21,262) de estas entidades solo están asociadas con un ticket cada una. Si bien algunas de estas entidades serán usuarios con un solo ticket, los usuarios que participan en la mezcla de Stake Shuffle también se ven así, pero estos pueden controlar muchos más tickets.
+
+Hay una parte del pool de tickets que opera en claro y se puede rastrear y una parte que se mezcla y solo se puede considerar en conjunto. Me resulta más fácil tratar estos conjuntos por separado, así que comencemos con el conjunto de tickets mixtos.
