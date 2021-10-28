@@ -22,4 +22,17 @@ Lo que nos interesa aquí es la *gente que compra* y vota con los tickets, pero 
 
 En el bloque 485,000 contó con 22,239 entidades distintas; sin embargo la mayoría (21,262) de estas entidades solo están asociadas con un ticket cada una. Si bien algunas de estas entidades serán usuarios con un solo ticket, los usuarios que participan en la mezcla de Stake Shuffle también se ven así, pero estos pueden controlar muchos más tickets.
 
-Hay una parte del pool de tickets que opera en claro y se puede rastrear y una parte que se mezcla y solo se puede considerar en conjunto. Me resulta más fácil tratar estos conjuntos por separado, así que comencemos con el conjunto de tickets mixtos.
+Hay una parte del pool de tickets que opera en claro y se puede rastrear y una parte que se mezcla solo se puede considerar en conjunto. Me resulta más fácil tratar estos conjuntos por separado, así que comencemos con el conjunto de tickets mixtos.
+
+**Shuffled Stake** 
+
+19,125 de los 485,000 tickets del bloque se compraron con insumos mixtos (47%) por lo que no hay mucho que decir sobre ellos, excepto sí votaron  y como lo hicieron.
+
+Imagen
+
+**Bloque 485.000 Tickets Mixtos en Votaciones de Politeia (Block 485,000 Mixed Tickets Politeia Voting)**
+
+
+Estos parecen estar ampliamente en línea con los resultados de la votación de la propuesta, por lo que parece que los tickets mixtos votaron de manera similar a los tickets sin mezclar.
+
+Cada tickets tiene su propio ciclo de vida variable, desde que se compra hasta que se selecciona para votar al azar o vence después de 142 días. Un ticket puede votar en cada propuesta de Politeia que se vota mientras el ticket este en vivo. Al tomar una snapshot del pool de tickets, los tickets serán de diferente edad e historial de votaciones, por lo que he optado por excluir las propuestas para las cuales el conjunto de tickets tenía una elegibilidad muy baja (menos del 5% de los tickets elegibles en comparación con la propuesta para la que tenían el mayor número de tickets) - esto es principalmente para mantener los gráficos legibles. En los gráficos, las barras más altas significan principalmente que la propuesta fue votada cerca del bloque de snapshot, pero al mirar la barra de abstención puede ver qué proporción del pool de tickets mixtos (en esta snapshot) votó de qué manera en las propuestas antes y también después de ese tiempo.
