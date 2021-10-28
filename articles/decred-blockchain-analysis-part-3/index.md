@@ -16,7 +16,7 @@ tl; dr aproximadamente el 1% de los tickets aún se están asignando a un clúst
 
 ### ¿Quién está en el pool?
 
-Imagen
+![bufalo](./assets/bufalodcr.jpeg)
 
 Lo que nos interesa aquí es la *gente que compra* y vota con los tickets, pero lo más cerca que podemos llegar a eso es la entidad que controla un cluster de direcciones. Entonces, la primera pregunta que debe hacerse es ¿cuántas entidades diferentes hay en un pool de tickets?
 
