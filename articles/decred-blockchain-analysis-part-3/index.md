@@ -101,11 +101,11 @@ Existe una fuerte correlación positiva (r = 0,92) entre el número de tickets r
 
 En el bloque 525,000 conté con 26,933 entidades distintas; esto es aproximadamente ~ 4,000 más que el bloque 485,000 y nuevamente la mayoría (26,237) de estas entidades solo están asociadas con un ticket cada una. Hay 24,047 de tickets mixtos en el pool por lo que la proporción ha aumentado (al 58% desde el 47% del anterior).
 
-imagen
+![8](./assets/8.png)
 
 **Gráfico de barras que muestra la distribución de tickets entre clústeres - Bloque 525.000**
 
-imagen
+![9](./assets/9.png)
 
 **Bloque 525.000 de Tickets Mixtos en Votación para Politeia**
 
