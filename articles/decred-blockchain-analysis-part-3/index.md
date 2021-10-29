@@ -55,7 +55,7 @@ Si consideramos la porción mixta (47%) y luego estos grupos con> = 100 tickets 
 
 ![4](./assets/4.png)
 
-**Block 485,000 - Votación por clústeres con >= 100 tickets en el pool**
+**Bloque 485,000 - Votación por clústeres con >= 100 tickets en el pool**
 
 Resulta que la mayoría de estos clústers no votan, solo hay votos de Politeia asociados con 12 de los 33 clústers principales en este período de tiempo de bloque.
 
