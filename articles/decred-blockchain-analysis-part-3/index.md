@@ -41,7 +41,7 @@ Los tickets mixtos en esta snapshot del pool fueron elegibles para hacer 60,819 
 
 ### Las Ballenas del Stake
 
-Imagen
+![2](./assets/2.png)
 
 **Tickets por Clúster: Bloque 485,000**
 
