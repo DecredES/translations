@@ -77,9 +77,9 @@ Este gráfico de líneas muestra el efecto reciente de la versión v1.6 el 25 de
 
 Lo contrario son los tickets con una dirección de stakesubmission única. Estos aún se pueden vincular mirando las entradas a los tickets si no están mezclados, pero al menos dificultan el trabajo de cualquiera que desee identificar los tickets de un stakeholder; probablemente ya no sea posible hacerlo de manera eficiente con solo navegar enlaces en un explorador de bloques, se requeriría un enfoque computacional más riguroso para agrupar eficientemente los tickets.
 
-imagen
+![6](./assets/6.png)
 
-**Entradas que no comparten una dirección de stakesubmission con otra entrada en el pool.**
+**Tickets que no comparten una dirección de stakesubmission con otros tickets en el pool.**
 
 ### 139 Días de Votación en Decred
 
