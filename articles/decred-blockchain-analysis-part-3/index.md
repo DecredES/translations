@@ -53,9 +53,9 @@ Las barras cortas (aunque las he alargado para hacerlas visibles) a la derecha r
 
 Si consideramos la porción mixta (47%) y luego estos grupos con> = 100 tickets que cubren ~ 75% del pool en buen detalle.
 
-imagen
+![4](./assets/4.png)
 
-**Block 485,000 - Votación por clústers con >= 100 tickets en el pool**
+**Block 485,000 - Votación por clústeres con >= 100 tickets en el pool**
 
 Resulta que la mayoría de estos clústers no votan, solo hay votos de Politeia asociados con 12 de los 33 clústers principales en este período de tiempo de bloque.
 
