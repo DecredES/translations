@@ -69,7 +69,7 @@ En el otro extremo del espectro de privacidad de los usuarios de tickets mixtos 
 
 El análisis de las direcciones stakesubmission y los clústeres deben producir resultados bastante similares, aunque la agrupaciones pueden conectar con varias direcciones de stakesubmission (reutilizadas) en un solo clúster. Sin embargo es mucho más fácil realizar un análisis de la reutilización de la dirección de stakesubmission directamente ya que este detalle se almacena junto con cada ticket.
 
-Imagen
+![5](./assets/5.png)
 
 **Las líneas representan el número de direcciones de stakesubmission** **que tenían al menos X tickets activos.**
 
