@@ -1,7 +1,7 @@
 Análisis de la Blockchain de Decred - Parte 3
 =============================================
 
-### Historia de los dos tickets pools
+### Historia de dos tickets pools
 
 Este informe aplica las agrupaciones de direcciones de todos los tickets en los pools en determinadas alturas del bloque, el objetivo es explorar qué tipo de información se puede resumir sobre la composición de los pools de tickets, preguntas como cuántas entidades operan allí y cuánta actividad está siendo ofuscada por la mezcla. He seleccionado dos bloques y perfilaré los pools de tickets a la altura de cada bloque, además de ver como votan los clusters en staking.
 
