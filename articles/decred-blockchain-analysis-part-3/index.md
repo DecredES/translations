@@ -28,9 +28,9 @@ Hay una parte del pool de tickets que opera en claro y se puede rastrear y una p
 
 19,125 de los 485,000 tickets del bloque se compraron con insumos mixtos (47%) por lo que no hay mucho que decir sobre ellos, excepto sí votaron  y como lo hicieron.
 
-Imagen
+![grafica](./assets/mixed-ticket-voting-485000.png)
 
-**Bloque 485.000 Tickets Mixtos en Votaciones de Politeia (Block 485,000 Mixed Tickets Politeia Voting)**
+**Bloque 485.000 Tickets Mixtos en Votaciones de Politeia**
 
 
 Estos parecen estar ampliamente en línea con los resultados de la votación de la propuesta, por lo que parece que los tickets mixtos votaron de manera similar a los tickets sin mezclar.
