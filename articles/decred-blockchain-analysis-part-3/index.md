@@ -87,7 +87,7 @@ Saltando 40,000 bloques hacia adelante para bloquear 525,000 repitamos las misma
 
 Una pregunta rápida que podemos responder es si los clústers que vimos en el bloque 485,000 todavía están haciendo staking en el bloque 525,000.
 
-Imagen
+![7](./assets/7.png)
 
 **Diagrama de dispersión que muestra la cantidad de tickets en vivo retenidos por un clúster en el bloque 485,000 y el bloque 525,000.**
 
