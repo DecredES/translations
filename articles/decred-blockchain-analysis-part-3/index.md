@@ -111,7 +111,7 @@ En el bloque 525,000 conté con 26,933 entidades distintas; esto es aproximadame
 
 La tasa de participación para los tickets mixtos en este bloque resultó ser del 36% nuevamente por las votaciones, esto parece seguir un patrón similar a la votación de tickets sin mezclar.
 
-Imagen
+![10](./assets/10.png)
 
 **Bloque 525,000 - Votación por clústeres con> = 100 tickets en el pool**
 
@@ -125,7 +125,7 @@ Ejecuté mi análisis de clústeres en todos los clústeres / direcciones que te
 
 Un buen punto de partida a considerar es si estas entidades son estables o dinámicas en su comportamiento: si el clúster tiene muchos tickets en el bloque 525.000 ¿significa que tendió a contener muchos tickets históricamente?
 
-imagen
+![11](./assets/11.png)
 
 **Diagrama de dispersión con ejes logarítmicos, bloque 525.000 de Tickets retenidos frente a tickets históricos retenidos por clústeres**
 
@@ -133,7 +133,7 @@ La correlación entre los tickets en vivo y los tickets históricos es de 0,71 p
 
 También podemos ver cuánto tiempo han estado activos estos clústeres en términos de toda la actividad asociada con las direcciones que se han agrupado.
 
-Imagen
+![12](./assets/12.png)
 
 **Diagrama de dispersión que muestra la edad de lo conglomerado (eje x) junto al número de posibles votos en Politeia (eje y) y la tasa de participación en las votaciones de Politeia (color)**
 
@@ -145,15 +145,19 @@ Los grupos de stakeholders más activos recientemente muestran un porcentaje de 
 
 Si bien es bastante fácil compilar un registro del DCR y los movimientos de tickets asociados con clústeres no mezclados, es mucho más difícil distinguir entre diferentes "tipos" de usuarios que solo miran esta información. Una de las formas más fáciles de traer información adicional es ver de dónde proviene el DCR del usuario. El DCR que se extrajo por medio del Tesoro y que provino del bloque génesis (Airdrop y recompensa para los fundadores) es fácil de encontrar en la cadena, lo que significa que los clústeres que lo recibieron se pueden etiquetar. Para este análisis he combinado los datos de 1 o 2 saltos desde la fuente para brindar una vista simplificada de sí un clúster está asociado con una fuente particular de DCR. Algunos de los clústeres aparecen en algunos tipos diferentes, lo que complica la cuestión de cómo construirlos.
 
-imagen
+![13](./assets/13.png)
 
 **Diagrama de dispersión para grupos con recompensas de airdrops entrantes que muestran la edad del clúster (eje x) junto al número de posibles votos en Politeia (eje y) y la tasa de participación en votaciones en Politeia (color)**
 
 No es sorprendente ver que varios destinatarios de airdrops han estado activos desde 2016 y todavía se encontraban haciendo staking en el bloque 525,000 entre ellos algunos votantes grandes y altamente receptivos en Politeia. El gráfico también sugiere que varias personas "activaron" su airdrop a mediados del 2017 y se convirtieron en stakeholders (para bloquear 525,000) e incluso hay algunos airdrops que se activan a fines del 2018 para unirse al pool de tickets.
 
+![14](./assets/14.png)
+
 **Diagrama de dispersión para clústeres con recompensas del Tesoro entrantes que muestran la edad del clúster (eje x) el número de posibles votos en Politeia (eje y) y la tasa de participación en votaciones de Politeia (color)**
 
 Parece que muchos de los contratistas que hacen stake con su DCR (para el bloque 525.000) tienen tasas de participación bastante altas en las votaciones de Politeia.
+
+![15](./assets/15.png)
 
 **Diagrama de dispersión para clústeres con recompensas de minería de PoW entrantes que muestran la edad del clúster (eje x) el número de posibles votos en Politeia (eje y) y la tasa de participación en las votaciones de Politeia (color).**
 
@@ -171,13 +175,11 @@ Al observar los datos históricos de los conglomerados hay algunos que se destac
 
 Este se destaca por la gran cantidad de airdrops hop1 (92,730 DCR) lo que implica que alrededor de 329 airdrops (282 DCR cada uno) terminaron yendo a la misma billetera, lo que a su vez implica un abuso bastante fuerte del airdrop por parte de alguien. Para complicar aún más esta imagen, se encuentran 25,734 DCR que recibió directamente del Tesoro lo que sugiere que tal vez las mismas partes que abusaron del airdrop también pudieron obtener algunos pagos del Tesoro. La minería fue una fuente aún mayor para este clúster ya que 682,334 de DCR llegaron a las direcciones del clúster a 1 salto de las recompensas mineras.
 
-imagenes
 
 **Historial de saldos y votaciones para el clúster DsS5puNw**
 
 Este grupo tuvo 86,411 tickets a lo largo de los años votando 72,848 veces. Un aspecto inusual del comportamiento de votación de este cluster es la votación del No sobre las propuestas de la agenda del 2017 (junto con los tickets que votaron a favor y se abstuvieron en la misma propuesta). El registro de votación de Politeia a continuación parece coherente y no troll, por lo que sospecho que este clúster sufre la fusión de los primeros usuarios de un VSP con el operador de ese VSP en un gran clúster. En este caso cuando comenzaron las propuestas de Politeia en octubre del 2018 parece que tal vez solo uno de los componentes del clúster todavía estaba activo, por lo cual no se vio nungún problema de alguna votación contradictoria.
 
-imagen
 
 **Historial de votaciones en Politeia para el clúster DsS5puNw**
 
