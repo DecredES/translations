@@ -175,10 +175,14 @@ Al observar los datos históricos de los conglomerados hay algunos que se destac
 
 Este se destaca por la gran cantidad de airdrops hop1 (92,730 DCR) lo que implica que alrededor de 329 airdrops (282 DCR cada uno) terminaron yendo a la misma billetera, lo que a su vez implica un abuso bastante fuerte del airdrop por parte de alguien. Para complicar aún más esta imagen, se encuentran 25,734 DCR que recibió directamente del Tesoro lo que sugiere que tal vez las mismas partes que abusaron del airdrop también pudieron obtener algunos pagos del Tesoro. La minería fue una fuente aún mayor para este clúster ya que 682,334 de DCR llegaron a las direcciones del clúster a 1 salto de las recompensas mineras.
 
+![16](./assets/16.png)
+
 
 **Historial de saldos y votaciones para el clúster DsS5puNw**
 
 Este grupo tuvo 86,411 tickets a lo largo de los años votando 72,848 veces. Un aspecto inusual del comportamiento de votación de este cluster es la votación del No sobre las propuestas de la agenda del 2017 (junto con los tickets que votaron a favor y se abstuvieron en la misma propuesta). El registro de votación de Politeia a continuación parece coherente y no troll, por lo que sospecho que este clúster sufre la fusión de los primeros usuarios de un VSP con el operador de ese VSP en un gran clúster. En este caso cuando comenzaron las propuestas de Politeia en octubre del 2018 parece que tal vez solo uno de los componentes del clúster todavía estaba activo, por lo cual no se vio nungún problema de alguna votación contradictoria.
+
+![17](./assets/17.png)
 
 
 **Historial de votaciones en Politeia para el clúster DsS5puNw**
@@ -203,7 +207,8 @@ Este clúster también recogió algunos airdrops (14.131 DCR de airdrop en el sa
 
 A diferencia del clúster anterior, los airdrops en cuestión esta vez se usaron para comprar tickets en lugar de combinarlos, por lo que no es fácil identificar los puntos de fusión en los que se puede demostrar que muchos de los fondos se combinaron. Sin embargo mi código de agrupación sugiere que una gran cantidad de DCR del airdrop terminaron en direcciones controladas por este clúster después de estar en stake.
 
-imagenes
+![18](./assets/18.png)
+
 
 **Historial de saldos y votaciones para el clúster DscqujsH**
 
