@@ -218,7 +218,8 @@ Desde el momento en que Politeia lanzó este clúster aparece como un stakeholde
 
 Este clúster tiene muchas recompensas de minería hop 0 (520,000 DCR) y comenzó en marzo del 2018 por lo que parece ser por medio de un importante minero ASIC o alguien que comenzó a ejecutar un pool de minería en ese período de tiempo. Se comporta de manera similar a muchos de los puntos mineros en los diagramas de dispersión anteriores pero solo incursionó en el staking, compró 731 tickets pero no votó en absoluto sobre ninguno de los cambios de consenso o propuestas de Politeia (0 de 1,517 oportunidades).
 
-imagenes
+
+![19](./assets/19.png)
 
 **Historial de saldos y votaciones para el clúster DsSWTHFr**
 
@@ -226,13 +227,15 @@ imagenes
 
 Una de los stakeholders más grandes en el bloque de 525.000 tickets sin mezclar en un pool también es un stakeholder desde hace mucho tiempo con 39.298 votos de tickets en bloques, ganando 37.000 DCR en recompensas. No hay coincidencias para las fuentes de su DCR y este clúster se activó en enero del 2018.
 
-Imagenes
+
+![20](./assets/20.png)
 
 **Politeia con los votos del clúster Dcrh8**
 
 El clúster solo votó sobre propuestas sobre el DEX, Market Makers y Ditto. Para la mayoría de los clústeres hay muy poco que los distinga, excepto su historial de votaciones. A veces el registro de votación indica la afiliación de un clúster (por ejemplo, sí las únicas propuestas de Politeia que alguna vez votaron apoyaban una propuesta específica de un creador de mercado) pero la mayoría de las veces solo nos puede brindar una idea de lo que los stakeholders valoran en términos de gastos del Tesoro.
 
-imagenes
+
+![21](./assets/21.png)
 
 **Balance del clúster dcrh8 y registro de votaciones.**
 
