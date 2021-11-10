@@ -46,7 +46,7 @@ Otras noticias
 
 Politeia cumplió su tercer aniversario de su lanzamiento el 16 de octubre y esta publicación de [@richardred](http://twitter.com/richardred) tiene algunas estadísticas y gráficos sobre su último año y los primeros tres años en general.
 
-
+![gráfica](./assets/graf_politeia.png)
 
 Sobre esta edición
 ==================
