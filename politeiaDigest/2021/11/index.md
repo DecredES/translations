@@ -1,5 +1,7 @@
 # Politeia Digest #48 — Octubre 4 — Noviembre 1 2021
 
+![portada](./assets/oct_politeia.png)
+
 Saldo de la tesorería: 733,772 DCR (aproximadamente +10,118 DCR / mes) --- $$82.5 millones (+ $1.1M/ mes) basado en el precio de $112.42 DCR.
 
 Nuevas Propuestas
