@@ -79,9 +79,9 @@ La distribución de 1,000 bloques [minados](https://miningpoolstats.stream/decre
 
 ![gráfica](./assets/hash.png)
 
-**Staking:** el [precio de los tickets](https://dcrdata.decred.org/charts?chart=ticket-price&zoom=krrqjgnz-kt1oo9gz&bin=window&axis=time&visibility=true-true) varió entre 139.7--209.7 DCR con un [promedio](https://dcrstats.com/) de 30 días de 191.6 DCR (-7.8).
+**Staking:** el [precio de los tickets](https://dcrdata.decred.org/charts?chart=ticket-price&zoom=ku5ml4us-kvgwhe37&bin=window&axis=time&visibility=true-true) varió entre 139.7--209.7 DCR con un [promedio](https://dcrstats.com/) de 30 días de 191.6 DCR (-7.8).
 
-La [cantidad bloqueada](https://dcrdata.decred.org/charts?chart=ticket-pool-value&zoom=krrqjgnz-kt1oo9gz&scale=linear&bin=block&axis=time) fue de 7.65--8.20 millones DCR lo que significa que entre el 56.7% y 61.1% del suministro circulante [participó](https://dcrdata.decred.org/charts?chart=stake-participation&zoom=krrqjgnz-kt1oo9gz&scale=linear&bin=block&axis=time) en el proof-of-stake.
+La [cantidad bloqueada](https://dcrdata.decred.org/charts?chart=ticket-pool-value&zoom=ku5ml4us-kvgwhe37&scale=linear&bin=block&axis=time) fue de 7.65--8.20 millones DCR lo que significa que entre el 56.7% y 61.1% del suministro circulante [participó](https://dcrdata.decred.org/charts?chart=stake-participation&zoom=ku5ml4us-kvgwhe37&scale=linear&bin=block&axis=time) en el proof-of-stake.
 
 ![gráfica](./assets/dcr.png)
 
