@@ -130,13 +130,13 @@ En respuesta a una pregunta común "¿Qué pasa en Decred y hacia dónde se diri
 
 > 👂¿Has oído hablar del gran hack de #Decred? ¿Qué tal el reciente tirón de alfombra que dio #Decred?
 
-Bueno, yo tampoco porque no existen.
+> Bueno, yo tampoco porque no existen.
 
-#Decred ha producido recientemente su bloque 600 000.
+> #Decred ha producido recientemente su bloque 600 000.
 
-600 jodidos mil bloques libres de tonterías.
+> 600 jodidos mil bloques libres de tonterías.
 
-Felicitaciones al equipo, a los stakers y visionarios. 🎖️ [(@cryptotivo)](https://twitter.com/cryptotivo/status/1451632443665047557)
+> Felicitaciones al equipo, a los stakers y visionarios. 🎖️ [(@cryptotivo)](https://twitter.com/cryptotivo/status/1451632443665047557) 
 
 **Medios**
 ==========
