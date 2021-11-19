@@ -47,7 +47,7 @@ Consulte el [issue 47](https://medium.com/decred-es/politeia-digest-47-septiemb
 -   La proporción de propuestas de personas que ya son contratistas ha aumentado del 48% en el año 2 al 77% en el año 3.
 -   La cantidad de tickets mixtos (aquellos con privacidad adicional) ha aumentado estadísticas históricas durante 3 años: 128 propuestas publicadas de las cuales 66 fueron aprobadas, 42 fueron rechazadas y 20 abandonadas.
 
-![imagen]
+![gráfica](./assets/aniversario.png)
 
 **Red**
 =======
