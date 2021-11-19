@@ -1,6 +1,8 @@
 Revista Decred Octubre 2021
 ===========================
 
+![portada](./assets/octubre.png)
+
 Lo más destacado de octubre:
 
 -   Politeia celebró su tercer año de funcionamiento y tuvo otro mes de desarrollo ajetreado.
