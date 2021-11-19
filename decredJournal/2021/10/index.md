@@ -83,7 +83,7 @@ La distribución de 1,000 bloques [minados](https://miningpoolstats.stream/decre
 
 La [cantidad bloqueada](https://dcrdata.decred.org/charts?chart=ticket-pool-value&zoom=krrqjgnz-kt1oo9gz&scale=linear&bin=block&axis=time) fue de 7.65--8.20 millones DCR lo que significa que entre el 56.7% y 61.1% del suministro circulante [participó](https://dcrdata.decred.org/charts?chart=stake-participation&zoom=krrqjgnz-kt1oo9gz&scale=linear&bin=block&axis=time) en el proof-of-stake.
 
-![gráfica](./assets/pool.png)
+![gráfica](./assets/dcr.png)
 
 **VSP:** El 1 de noviembre los servidores vspd [administraron](https://decred.org/vsp/) ~7 400 (-200) tickets en vivo y los servidores dcrstakepool enumerados aproximadamente ~224 (+4). En conjunto, los 7 VSP heredados y los 15 nuevos administraron el 18.9% (0.1%) del grupo de tickets.
 
