@@ -77,13 +77,13 @@ La distribución de 1,000 bloques [minados](https://miningpoolstats.stream/decre
 -   OKEx 0.7%
 -   unknown 0.3%.
 
-![gráfica]
+![gráfica](./assets/hash.png)
 
 **Staking:** el [precio de los tickets](https://dcrdata.decred.org/charts?chart=ticket-price&zoom=krrqjgnz-kt1oo9gz&bin=window&axis=time&visibility=true-true) varió entre 139.7--209.7 DCR con un [promedio](https://dcrstats.com/) de 30 días de 191.6 DCR (-7.8).
 
 La [cantidad bloqueada](https://dcrdata.decred.org/charts?chart=ticket-pool-value&zoom=krrqjgnz-kt1oo9gz&scale=linear&bin=block&axis=time) fue de 7.65--8.20 millones DCR lo que significa que entre el 56.7% y 61.1% del suministro circulante [participó](https://dcrdata.decred.org/charts?chart=stake-participation&zoom=krrqjgnz-kt1oo9gz&scale=linear&bin=block&axis=time) en el proof-of-stake.
 
-![gráfica]
+![gráfica](./assets/pool.png)
 
 **VSP:** El 1 de noviembre los servidores vspd [administraron](https://decred.org/vsp/) ~7 400 (-200) tickets en vivo y los servidores dcrstakepool enumerados aproximadamente ~224 (+4). En conjunto, los 7 VSP heredados y los 15 nuevos administraron el 18.9% (0.1%) del grupo de tickets.
 
@@ -172,7 +172,7 @@ En octubre, DCR cotizaba entre 102.40--140.10 USD/ BTC 0.0018--0.0025. La tarifa
 
 @tacorevenge publicó la [segunda parte](https://medium.com/@tacorevenge/the-suppressor-part-2-on-chain-analysis-6561c5a478c4) de la investigación de la entidad The Suppressor, siendo este el sospechoso de manipular los mercados de DCR. Esta vez, el análisis en cadena se utilizó para ver cómo han estado fluyendo los fondos entre los mineros, los exchanges centralizados y DCRDEX.
 
-![imagen]
+![imagen](./assets/volumen.png)
 
 **Noticias Relevantes**
 -----------------------
