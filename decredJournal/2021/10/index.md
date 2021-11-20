@@ -54,7 +54,7 @@ Consulte el [issue 47](https://medium.com/decred-es/politeia-digest-47-septiemb
 **Red**
 =======
 
-**Hashrate:** el [hashrate](https://dcrdata.decred.org/charts?chart=hashrate&zoom=krrqjgnz-kt1oo9gz&scale=linear&bin=block&axis=time) de octubre se abrió a ~237 Ph / s y cerró ~284 Ph / s, tocando fondo en 164 Ph / s alcanzando un máximo de 323 Ph / s durante todo el mes.
+**Hashrate:** el [hashrate](https://dcrdata.decred.org/charts?chart=hashrate&zoom=ku5ml4us-kvgwhe37&scale=linear&bin=block&axis=time) de octubre se abrió a ~237 Ph / s y cerró ~284 Ph / s, tocando fondo en 164 Ph / s alcanzando un máximo de 323 Ph / s durante todo el mes.
 
 Distribución del hashrate [reportada](https://miningpoolstats.stream/decred) en los pools el 1 de noviembre:
 
@@ -101,7 +101,7 @@ Versiones de nodos a partir del [snapshot](https://nodes.jholdstock.uk/user_age
 -   v1.5.2--2%
 -   v1.5.1--0.8%.
 
-La proporción de [monedas mezcladas](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jyefppu5-kub1inpe&bin=day&axis=time&visibility=true-true-true) varió entre el 52.3% y 54.4% y estableció un nuevo récord histórico, mientras que la suma de monedas mixtas no gastadas superó la marca de los 7.3 millones.
+La proporción de [monedas mezcladas](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jz3q3lq8-l0s732o6&scale=linear&bin=day&axis=time&visibility=true-true-true) varió entre el 52.3% y 54.4% y estableció un nuevo récord histórico, mientras que la suma de monedas mixtas no gastadas superó la marca de los 7.3 millones.
 
 Ecosistema
 ----------
