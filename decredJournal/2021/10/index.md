@@ -71,20 +71,6 @@ Cambios en la orientación del usuario:
 -   Se corrigieron varios problemas de UX de navegación de comentarios: el filtrado de preferencias pérdidas, el botón Volver no funcionaba correctamente, la carga lenta de subprocesos individuales, parpadeo del UI.
 - ~ 5 correcciones de errores.
 
-Comunidad
----------
-
-¡Bienvenido al nuevo contribuyente con código fusionado en la rama master: @AdimekweEbuka ([godcr](https://github.com/planetdecred/godcr/commits?author=AdimekweEbuka))!
-
-Estadísticas de la comunidad a partir del 2 de noviembre:
-
--   Seguidores de [Twitter](https://twitter.com/decredproject): 49 503 (+830)
--   Suscriptores de [Reddit](https://www.reddit.com/r/decred/): 12 248 (+294)
--   Usuarios en la sala #general de [Matrix](https://chat.decred.org/): 551 (+16)
--   Usuarios de [Discord](https://discord.com/invite/GJ2GXfz): 2 267 (+190)
--   Usuarios de [Telegram](https://t.me/Decred): 2 940 (+31)
--   Suscriptores de [Youtube](https://www.youtube.com/decredchannel): 4 620 (+10), views: 197 000 (+1 000)
-
 Cambios en la herramienta de línea de comandos de `politeiavoter`:
 
 -   Se cambió el método al [*trickling](https://github.com/decred/politeia/pull/1556) method* (envío lento de votos). Anteriormente, se había estado enviando votos en una secuencia con intervalos de tiempos aleatorios. Esto ha demostrado ser frágil ya que un envío lento / fallido estaba retrasando todos los demás votos. El nuevo método utiliza procesos de votación paralelos independientes que comienzan en momentos aleatorios y no se afectan entre sí, lo que hace que el goteo (trickling) sea más robusto.
@@ -138,6 +124,21 @@ Orientado al usuario:
 -   Se recomienda iniciar el [escaneo](https://github.com/decred/dcrdex/pull/1249) de la billetera BTC SPV a partir de una fecha determinada para ahorrar tiempo.
 -   Se requerirá claves públicas extendidas ["zpub"](https://github.com/decred/dcrdex/pull/1255) para convertirlos a "xpub" para mayor comodidad. Esto es para operadores de servidores que estén dispuestos a aceptar tarifas de registro en BTC.
 -   ~ 6 correcciones de errores.
+
+Comunidad
+---------
+
+¡Bienvenido al nuevo contribuyente con código fusionado en la rama master: @AdimekweEbuka ([godcr](https://github.com/planetdecred/godcr/commits?author=AdimekweEbuka))!
+
+Estadísticas de la comunidad a partir del 2 de noviembre:
+
+-   Seguidores de [Twitter](https://twitter.com/decredproject): 49 503 (+830)
+-   Suscriptores de [Reddit](https://www.reddit.com/r/decred/): 12 248 (+294)
+-   Usuarios en la sala #general de [Matrix](https://chat.decred.org/): 551 (+16)
+-   Usuarios de [Discord](https://discord.com/invite/GJ2GXfz): 2 267 (+190)
+-   Usuarios de [Telegram](https://t.me/Decred): 2 940 (+31)
+-   Suscriptores de [Youtube](https://www.youtube.com/decredchannel): 4 620 (+10), views: 197 000 (+1 000)
+
 
 **Gobernanza**
 --------------
