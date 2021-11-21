@@ -85,6 +85,60 @@ Estadísticas de la comunidad a partir del 2 de noviembre:
 -   Usuarios de [Telegram](https://t.me/Decred): 2 940 (+31)
 -   Suscriptores de [Youtube](https://www.youtube.com/decredchannel): 4 620 (+10), views: 197 000 (+1 000)
 
+Cambios en la herramienta de línea de comandos de `politeiavoter`:
+
+-   Se cambió el método al [*trickling](https://github.com/decred/politeia/pull/1556) method* (envío lento de votos). Anteriormente, se había estado enviando votos en una secuencia con intervalos de tiempos aleatorios. Esto ha demostrado ser frágil ya que un envío lento / fallido estaba retrasando todos los demás votos. El nuevo método utiliza procesos de votación paralelos independientes que comienzan en momentos aleatorios y no se afectan entre sí, lo que hace que el goteo (trickling) sea más robusto.
+-   Se agregó una opción para abortar si el goteo de votos (trickling method) no puede terminar con suficiente [tiempo adicional](https://github.com/decred/politeia/pull/1542) antes de que finalice la votación. Esta alarma al usuario para que ajuste los parámetros de modo que quede tiempo suficiente (12 horas por defecto) para reintentar cualquier voto fallido, lo que puede suceder por conexiones deficientes o por la red de Tor.
+-   Se devolvió la impresión de los [nombres](https://github.com/decred/politeia/pull/1548) de las propuestas en el comando de `inventario`.
+
+Cambios internos y de backend:
+
+-   API agregada para obtener [cambios en el estado](https://github.com/decred/politeia/pull/1526) de facturación.
+-   Se permitió la obtención de cambios de estado de facturación en [lotes](https://github.com/decred/politeia/pull/1535).
+-   Utilización de la política del servidor para el [tamaño de la página](https://github.com/decred/politeiagui/pull/2622).
+-   Se agregaron verificaciones de integridad de datos para los pluggins `[ticketvote](<https://github.com/decred/politeia/pull/1531>)` y `[comments](<https://github.com/decred/politeia/pull/1544>)`.
+-   Se agregó un nuevo comando `pictl` para probar el [RFP flow](https://github.com/decred/politeia/pull/1551).
+-   ~ 4 correcciones de errores.
+
+Refactorización en preparación para la [reescritura de la capa de usuario](https://github.com/decred/politeia/issues/1479) (la mayor parte del trabajo fue para la [propuesta del tercer trimestre de 2021](https://proposals.decred.org/record/91cfcc8)):
+
+-   Se reorganizó politeiawww codebase para trasladar las API heredadas a un paquete `[legacy](<https://github.com/decred/politeia/pull/1523>)`. Esto facilitará la reescritura de la capa de usuario para usar un plugin de arquitectura y permitir el escalado horizontal.
+-   Se extrajo el paquete `[logger](<https://github.com/decred/politeia/pull/1527>)` para permitir que los plugins configuren su registro y se conviertan en autónomos.
+-   Se extrajo el paquete `websockets` (hará que sea mas fácil escalar los servidores).
+-   Se extrajo el manejo de la [configuración](https://github.com/decred/politeia/pull/1536) en su propio paquete y separó la configuración para la API legacy para una eliminación más fácil en el futuro.
+-   Se movió los métodos de manejo de [identidad](https://github.com/decred/politeia/pull/1530) a lugares más apropiados.
+-   Se agregó una tienda de sesiones ([session store](https://github.com/decred/politeia/pull/1555)) genérica (reemplazará el legacy que no tenía la separación adecuada de preocupaciones).
+
+![money](./assets/money.png)
+
+### **[vspd](https://github.com/decred/vspd)**
+
+*vspd es un servidor de software para ejecutar un proveedor de servicios de votación. Un VSP vota en nombre de sus usuarios las 24 horas del día, los 7 días de la semana y no puede robar fondos.*
+
+-   Se hizo actualización a la última versión de [dcrd RPC](https://github.com/decred/vspd/pull/297). Desde esta confirmación, vspd dejará de funcionar contra dcrd v1.6 y comenzará a apuntar a la rama maestra.
+-   Se permitió establecer una dirección de firma [alternativa](https://github.com/decred/vspd/pull/287) para admitir el staking de VSP con Trezor
+
+### **[dcrlnd](https://github.com/decred/dcrlnd)**
+
+*dcrlnd es el software de nodo Lightning Network de Decred. LN permite transacciones instantáneas y de bajo costo.*
+
+-   Se realizó el descubrimiento de cuentas [solo una vez](https://github.com/decred/dcrlnd/pull/145) para billeteras integradas (no se aplica a billeteras remotas que se controlan externamente).
+-   Se mejoró los documentos de [inicio rápido](https://github.com/decred/dcrlnd/pull/146) y se agregó un nuevo documento que resume los [4 modos de operación](https://github.com/decred/dcrlnd/blob/master/docs/operation_modes.md) (sincronización dcrd o SPV, billetera remota o integrada).
+
+### **[DCRDEX](https://github.com/decred/dcrdex)**
+
+*DCRDEX es un exchange sin custodia para el trading sin confianza, impulsado por atomic swaps.*
+
+Orientado al usuario:
+
+-   Flujo de registro reelaborado para aceptar [activos](https://github.com/decred/dcrdex/pull/1223) distintos de DCR.
+-   Se agregó una [descripción general](https://github.com/decred/dcrdex/pull/1232) de los precios actuales y los cambios de 24 horas en la barra lateral izquierda.
+-   Se mejoró la secuencia de [registro](https://github.com/decred/dcrdex/pull/1234) y diseño / animaciones de formularios.
+-   Se agregó [soporte de Bitcoin SPV](https://github.com/decred/dcrdex/pull/1230) para comerciar con BTC sin administrar una blockchain de Bitcoin completa. Construido sobre [Neutrino](https://github.com/lightninglabs/neutrino) y [btcwallet](https://github.com/btcsuite/btcwallet) (**¡antigua inversión dando sus frutos!**).
+-   Se recomienda iniciar el [escaneo](https://github.com/decred/dcrdex/pull/1249) de la billetera BTC SPV a partir de una fecha determinada para ahorrar tiempo.
+-   Se requerirá claves públicas extendidas ["zpub"](https://github.com/decred/dcrdex/pull/1255) para convertirlos a "xpub" para mayor comodidad. Esto es para operadores de servidores que estén dispuestos a aceptar tarifas de registro en BTC.
+-   ~ 6 correcciones de errores.
+
 **Gobernanza**
 --------------
 
