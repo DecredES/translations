@@ -65,10 +65,11 @@ Interno:
 
 Cambios en la orientación del usuario:
 
--   Se agregó una forma estándar de mostrar cualquier cambio de estado. El administrador que censure o abandone la propuesta se mostrará junto con el motivo que dieron para el cambio de estado.
--   Se admite múltiples cambios de estado de facturación. El valor predeterminado es permitir solo un único cambio de estado de facturación (de Activo a Completado o Cerrado), pero es una opción configurable. Si un administrador comete un error, el administrador del sistema puede actualizar temporalmente la configuración para permitir que se corrija el error. También es posible deshabilitar temporalmente los cambios de estado.
+-   Se agregó una forma estándar de mostrar cualquier cambio de estado. El administrador que censure o abandone la propuesta se mostrará junto con el motivo que dieron para el cambio del estado.
+-   Se admite múltiples cambios de estado de facturación. El valor predeterminado es permitir solo un único cambio de estado (de Activo a Completado o Cerrado), pero es una opción configurable. Si un administrador comete un error, el administrador del sistema puede actualizar temporalmente la configuración para permitir que se corrija el error. También es posible deshabilitar temporalmente los cambios del estado.
 -   Mejoramiento y estandarización del error de identidad. Ahora se muestra el mismo error cada vez que el usuario intenta escribir datos en Politeia sin que se cargue su identidad activa en el navegador. El mensaje de error dirige a la página de detalles del usuario para solucionar el problema.
--   Se corrigieron varios problemas de UX de navegación de comentarios: filtrado de preferencias pérdidas, el botón Volver no funciona correctamente, carga lenta de subprocesos individuales, parpadeo de la interfaz de usuario ~ 5 otras correcciones de errores
+-   Se corrigieron varios problemas de UX de navegación de comentarios: el filtrado de preferencias pérdidas, el botón Volver no funcionaba correctamente, la carga lenta de subprocesos individuales, parpadeo del UI.
+- ~ 5 correcciones de errores.
 
 Comunidad
 ---------
