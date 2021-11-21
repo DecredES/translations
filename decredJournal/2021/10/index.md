@@ -13,7 +13,62 @@ Lo más destacado de octubre:
 **Desarrollo**
 --------------
 
-Para ver la sección completa de desarrollo puede visitar el GitHub de la traducción completa.
+El trabajo que se informa a continuación tiene el estado "fusionado con el maestro" al menos que se indique lo contrario. Significa que el trabajo se completa, se revisa e integra en el código fuente para que los usuarios avanzados puedan [crear y ejecutar](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c) pero aún no está disponible en la versión de binarios para los usuarios habituales.
+
+### [dcrd](https://github.com/decred/dcrd)
+
+*dcrd es una implementación de nodo completo que impulsa la red peer-to-peer de Decred en todo el mundo.*
+
+Cambios fusionados:
+
+-   La actualización de índices (transacción, dirección, dirección existente) se ha hecho [asincrónica](https://github.com/decred/dcrd/pull/2219) para acelerar la ruta crítica de validación de bloques y código de conexión. Se permite una propagación de votos más rápida y ayuda a allanar el camino para otras optimizaciones, modelos de sincronización y en última instancia, mecanismos de recuperación de corrupción de datos más agradables.
+-   Se hizo una simplificación para usar solo el último [checkpoint](https://github.com/decred/dcrd/pull/2763), ya que los checkpoints intermedios ya no son necesarios para la sincronización de [headers-first syncing](https://github.com/decred/dcrd/pull/2555)
+-   Mejoramientos en la consistencia y claridad de las [pruebas](https://github.com/decred/dcrd/pull/2757) del paquete `txscript`.
+-   Manejo fijo de revocaciones automáticas de tickets cuando el bloque se [desconecte](https://github.com/decred/dcrd/pull/2768) durante una reorganización en cadena.
+-   Se corrigió una [carrera](https://github.com/decred/dcrd/pull/2758) de datos en la gestión de direcciones de pares.
+-   Se arreglo el manejo de las herramientas [`findcheckpoint`](https://github.com/decred/dcrd/pull/2759) y [`addblock`](https://github.com/decred/dcrd/pull/2760).
+-   Se ha agregado compatibilidad con [libFuzzer](https://llvm.org/docs/LibFuzzer.html) al conjunto de pruebas de [fuzzing](https://github.com/degeri/dcrd-continuous-fuzz) continuo de dcrd.
+
+### **[dcrwallet](https://github.com/decred/dcrwallet)**
+
+*dcrwallet es un servidor de billetera utilizado por aplicaciones de billetera gráfica y líneas de comandos.*
+
+-   Se implementó los métodos [`getblockheader`](https://github.com/decred/dcrwallet/pull/2098) y [`getcurrentnet`](https://github.com/decred/dcrwallet/pull/2102) en modo SPV (para ser utilizado por DCRDEX).
+-   Se agregó un campo [`spv`](https://github.com/decred/dcrwallet/pull/2094) al resultado de `walletinfo` para distinguir entre los modos de sincronización.
+-   Se manejo la [pérdida de sincronización](https://github.com/decred/dcrwallet/pull/2099) fija en modo SPV
+
+### **[Decrediton](https://github.com/decred/decrediton)**
+
+*Decrediton es una aplicación de billetera para escritorio con todas las funciones que cuentan con votación integrada, mezcla de StakeShuffle, Lightning Network, comercio DEX y más. Funciona con o sin una blockchain completa (modo SPV).*
+
+Cambios orientación del usuario:
+
+-   Se implementó un nuevo diseño de UI en la pestaña [Overview del LN](https://github.com/decred/decrediton/pull/3551). Las pestañas de la billetera, red y Torres de vigilancia (Watchtowers) se han agrupado en una pestaña Avanzada recién introducida.
+-   Nuevo diseño de UI para [modales](https://github.com/decred/decrediton/pull/3534) de billetera agregando alternancia de visibilidad para la contraseña.
+-   Se agregó la capacidad de usar [VSP aleatorio](https://github.com/decred/decrediton/pull/3560) en compras automáticas de tickets (con una tarifa máxima configurable).
+-   Habilitación automática del nuevo [cifrado por cuenta](https://github.com/decred/decrediton/pull/3579) para billeteras nuevas.
+-   Usabilidad mejorada del [selector VSP](https://github.com/decred/decrediton/pull/3563).
+-   ~ 13 correcciones de errores.
+
+Interno:
+
+-   Integración del DEX actualizada a través de [libdexc](https://github.com/decred/decrediton/pull/3549) para utilizar las próximas funciones 0.3 (UI localizada, restauración desde contraseñas semilla y descubrimiento de cuentas existentes).
+-   Actualización a [Electron 15](https://github.com/decred/decrediton/pull/3571).
+-   Se agregó una nueva herramienta GUI para [traducir strings](https://github.com/decred/decrediton/pull/3569) y una [guía](https://github.com/decred/decrediton/blob/master/app/i18n/community_translators.md) para la comunidad de traductores.
+-   Pruebas automatizadas para las vistas de las [cuentas](https://github.com/decred/decrediton/pull/3577).
+
+![LN1](./assets/LN1.png)
+
+### **[Politeia](https://github.com/decred/politeia)**
+
+*Politeia es el sistema de propuestas de Decred. Se utiliza para solicitar financiación a la tesorería de Decred.*
+
+Cambios en la orientación del usuario:
+
+-   Se agregó una forma estándar de mostrar cualquier cambio de estado. El administrador que censure o abandone la propuesta se mostrará junto con el motivo que dieron para el cambio de estado.
+-   Se admite múltiples cambios de estado de facturación. El valor predeterminado es permitir solo un único cambio de estado de facturación (de Activo a Completado o Cerrado), pero es una opción configurable. Si un administrador comete un error, el administrador del sistema puede actualizar temporalmente la configuración para permitir que se corrija el error. También es posible deshabilitar temporalmente los cambios de estado.
+-   Mejoramiento y estandarización del error de identidad. Ahora se muestra el mismo error cada vez que el usuario intenta escribir datos en Politeia sin que se cargue su identidad activa en el navegador. El mensaje de error dirige a la página de detalles del usuario para solucionar el problema.
+-   Se corrigieron varios problemas de UX de navegación de comentarios: filtrado de preferencias pérdidas, el botón Volver no funciona correctamente, carga lenta de subprocesos individuales, parpadeo de la interfaz de usuario ~ 5 otras correcciones de errores
 
 Comunidad
 ---------
