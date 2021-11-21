@@ -82,14 +82,14 @@ Cambios internos y de backend:
 -   API agregada para obtener [cambios en el estado](https://github.com/decred/politeia/pull/1526) de facturación.
 -   Se permitió la obtención de cambios de estado de facturación en [lotes](https://github.com/decred/politeia/pull/1535).
 -   Utilización de la política del servidor para el [tamaño de la página](https://github.com/decred/politeiagui/pull/2622).
--   Se agregaron verificaciones de integridad de datos para los pluggins `[ticketvote](<https://github.com/decred/politeia/pull/1531>)` y `[comments](<https://github.com/decred/politeia/pull/1544>)`.
+-   Se agregaron verificaciones de integridad de datos para los pluggins [`ticketvote`](<https://github.com/decred/politeia/pull/1531>) y [`comments`](<https://github.com/decred/politeia/pull/1544>).
 -   Se agregó un nuevo comando `pictl` para probar el [RFP flow](https://github.com/decred/politeia/pull/1551).
 -   ~ 4 correcciones de errores.
 
-Refactorización en preparación para la [reescritura de la capa de usuario](https://github.com/decred/politeia/issues/1479) (la mayor parte del trabajo fue para la [propuesta del tercer trimestre de 2021](https://proposals.decred.org/record/91cfcc8)):
+Refactorización en preparación para la [reescritura de la capa de usuario](https://github.com/decred/politeia/issues/1479) (la mayor parte del trabajo fue para la [propuesta del tercer trimestre del 2021](https://proposals.decred.org/record/91cfcc8)):
 
--   Se reorganizó politeiawww codebase para trasladar las API heredadas a un paquete `[legacy](<https://github.com/decred/politeia/pull/1523>)`. Esto facilitará la reescritura de la capa de usuario para usar un plugin de arquitectura y permitir el escalado horizontal.
--   Se extrajo el paquete `[logger](<https://github.com/decred/politeia/pull/1527>)` para permitir que los plugins configuren su registro y se conviertan en autónomos.
+-   Se reorganizó politeiawww codebase para trasladar las API heredadas a un paquete [`legacy`](<https://github.com/decred/politeia/pull/1523>). Esto facilitará la reescritura de la capa de usuario para usar un plugin de arquitectura y permitir el escalado horizontal.
+-   Se extrajo el paquete [`logger`](<https://github.com/decred/politeia/pull/1527>) para permitir que los plugins configuren su registro y se conviertan en autónomos.
 -   Se extrajo el paquete `websockets` (hará que sea mas fácil escalar los servidores).
 -   Se extrajo el manejo de la [configuración](https://github.com/decred/politeia/pull/1536) en su propio paquete y separó la configuración para la API legacy para una eliminación más fácil en el futuro.
 -   Se movió los métodos de manejo de [identidad](https://github.com/decred/politeia/pull/1530) a lugares más apropiados.
