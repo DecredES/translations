@@ -125,6 +125,63 @@ Orientado al usuario:
 -   Se requerirá claves públicas extendidas ["zpub"](https://github.com/decred/dcrdex/pull/1255) para convertirlos a "xpub" para mayor comodidad. Esto es para operadores de servidores que estén dispuestos a aceptar tarifas de registro en BTC.
 -   ~ 6 correcciones de errores.
 
+Cambios internos:
+
+-   Se sdmite varias [cuentas HD](https://github.com/decred/dcrdex/pull/1210) para la misma semilla de aplicación, para permitir el registro de cuentas adicionales si se suspende la cuenta inicial. Este cambio también retira las cuentas heredadas con claves aleatorias para garantizar que todas las cuentas nuevas se puedan derivar de la semilla de la aplicación.
+-   El backend del cliente DCR fue refactorizado para admitir implementaciones alternativas de [billetera](https://github.com/decred/dcrdex/pull/1227). Esto se utilizará para integrar DCRDEX en GoDCR.
+
+Progreso hacia el soporte de Ethereum:
+
+-   Se implementó varios [métodos de backend](https://github.com/decred/dcrdex/issues/1154) ([intercambios](https://github.com/decred/dcrdex/pull/1218) y [canjes](https://github.com/decred/dcrdex/pull/1219) estimados, [financiamiento](https://github.com/decred/dcrdex/pull/1221) en ordenes, [firma](https://github.com/decred/dcrdex/pull/1228) de mensajes y más).
+-   Función agregada para iniciar un [lote](https://github.com/decred/dcrdex/pull/1251) de intercambios múltiples en la misma transacción (esto es para ahorrar gas).
+-   Se puede [derivar](https://github.com/decred/dcrdex/pull/1225) la billetera de Ethereum interna a partir de la semilla de la aplicación DEX.
+
+![21](./assets/21.png)
+
+### [Decred Wallet (iOS)](https://github.com/planetdecred/dcrios)
+
+-   Se muestran saldos distintos de cero con 8 decimales.
+-   Colores e iconos fijos para el modo oscuro.
+
+### [GoDCR](https://github.com/planetdecred/godcr)
+
+*GoDCR es una aplicación de billetera para escritorio liviana con staking integrado, privacidad y navegación en Politeia.*
+
+Cambios en el interfaz de usuario:
+
+-   Se agregó un botón para [ocultar](https://github.com/planetdecred/godcr/pull/646) rápidamente el saldo de la billetera para aumentar la privacidad del usuario por si alguien desconocido mira encima del hombro.
+-   Se agregó un [recordatorio](https://github.com/planetdecred/godcr/pull/663) para hacer una copia de seguridad de las palabras iniciales.
+-   Ciclo de campos de entrada en la [Tab key](https://github.com/planetdecred/godcr/pull/640).
+-   [Terminología](https://github.com/planetdecred/godcr/pull/645) unificada sobre contraseñas y semillas.
+-   Ahora se puede mostrar más detalles en la información sobre las [herramientas](https://github.com/planetdecred/godcr/pull/638) en las propuestas de Politeia.
+-   Se puede mostrar el tiempo desde la [última actualización](https://github.com/planetdecred/godcr/pull/642) de los datos de Politeia.
+-   Información de [tiempo](https://github.com/planetdecred/godcr/pull/666) mejorada en la página Transacciones.
+-   Se agregó control en el [scroll](https://github.com/planetdecred/godcr/pull/664) para el desplazamiento del *slider* en listas largas.
+-   Ahora se [puede permitir](https://github.com/planetdecred/godcr/pull/625) contraseñas vacías en ciertos casos excepcionales.
+-   ~ 10 correcciones de errores.
+
+Cambios internos:
+
+-   Se implementó un efecto de [resaltado](https://github.com/planetdecred/godcr/pull/630) personalizado en el que se puede hacer clic con colores y bordes configurables y es reutilizado en toda la aplicación.
+-   Se actualizó la última versión de [Gio](https://github.com/planetdecred/godcr/pull/665) y se ha eliminado el código que ya no es necesario.
+-   Se admite iconos personalizados en los [inputs fields](https://github.com/planetdecred/godcr/pull/677).
+
+Se ha combinado la biblioteca [dcrlibwallet](https://github.com/planetdecred/dcrlibwallet) (compartida por las carteras de Android / iOS y GoDCR):
+
+-   Se ha actualizado los [últimos](https://github.com/planetdecred/dcrlibwallet/pull/209) módulos dcrd, dcrwallet y dcrdata.
+-   Se agregó la función para obtener el [timestapm](https://github.com/planetdecred/dcrlibwallet/pull/208) de la última sincronización de Politeia.
+
+![23](./assets/23.png)
+
+*El desarrollo continuó a pesar de que la segunda [propuesta de GoDCR](https://proposals.decred.org/record/f7d9fc8) fue rechazada (49% Sí). Esperamos la versión revisada y las nuevas compilaciones de la aplicación.*
+
+### **[dcrdata](https://github.com/decred/dcrdata)**
+
+*dcrdata es un explorador blockchain de Decred y datos fuera de la cadena como propuestas, mercados y más de Politeia.*
+
+-   Actualización de las [dependencias](https://github.com/decred/dcrdata/pull/1875) [Decred](https://github.com/decred/dcrdata/pull/1874).
+-   Se actualizó a [Bootstrap 5](https://github.com/decred/dcrdata/pull/1872).
+
 Comunidad
 ---------
 
